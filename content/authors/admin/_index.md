@@ -1,16 +1,16 @@
 ---
 # Display name
-title: 吳健雄
+title: 최우성
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Choi Woo Seong
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Woo Seong
+last_name: Choi
 
 # Pronouns (optional)
-pronouns: she/her
+pronouns: he/him
 
 # Status emoji
 status:

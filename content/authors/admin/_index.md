@@ -173,6 +173,6 @@ awards:
     icon: brands/datacamp
     summary: |
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
----
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+      
+---저는 전북대학교 IT정보공학과에 재학 중인 최우성입니다. 이번 프로젝트에서는 GitHub Pages를 이용해 포트폴리오 사이트를 제작했습니다.

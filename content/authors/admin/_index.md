@@ -45,7 +45,7 @@ education:
     institution: 전북대학교 
     date_start: 2021-03-01
     date_end: 2026-12-31
-    summary: |저는 전북대학교 IT정보공학과에 재학 중인 최우성입니다. 이번 프로젝트에서는 GitHub를 이용해 포트폴리오 사이트를 제작했습니다.
+    summary: "|저는 전북대학교 IT정보공학과에 재학중인 최우성입니다. 이번 프로젝트에서는 GitHub를 이용해 포트폴리오 사이트를 제작했습니다"
     button:
       text: 'Read Thesis'
       url: 'https://example.com'

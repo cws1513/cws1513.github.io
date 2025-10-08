@@ -23,35 +23,29 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: IT정보공학과 학생
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: 전북대학교
+    url: https://www.jbnu.ac.kr/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/BuildLore
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/cws1513
   - icon: brands/linkedin
     url: https://www.linkedin.com/
   - icon: brands/instagram
     url: https://www.instagram.com/
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+  - area: IT정보공학
+    institution: 전북대학교 
+    date_start: 2021-03-01
+    date_end: 2026-12-31
+    summary: |저는 전북대학교 IT정보공학과에 재학 중인 최우성입니다. 이번 프로젝트에서는 GitHub를 이용해 포트폴리오 사이트를 제작했습니다.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
@@ -174,5 +168,4 @@ awards:
     summary: |
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 
-      
----저는 전북대학교 IT정보공학과에 재학 중인 최우성입니다. 이번 프로젝트에서는 GitHub Pages를 이용해 포트폴리오 사이트를 제작했습니다.
+

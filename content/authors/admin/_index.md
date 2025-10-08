@@ -12,6 +12,9 @@ last_name: Choi
 # Pronouns (optional)
 pronouns: he/him
 
+# Profile image (NEW)
+avatar: "/images/profile.png"
+
 # Status emoji
 status:
   icon: ☕️

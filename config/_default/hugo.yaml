@@ -2,8 +2,8 @@ title: "Choi Wooseong Portfolio"
 baseURL: "https://cws1513.github.io/"
 
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: ko
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 

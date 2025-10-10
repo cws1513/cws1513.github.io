@@ -2,27 +2,24 @@ main:
   - name: Home
     url: /
     weight: 10
-
   - name: About
-    url: '#authors'      
+    url: '#authors'
     weight: 20
-
   - name: Projects
     url: '#projects'
     weight: 30
-    children:            
+    children:
       - name: Web Portfolio
         url: projects/web/
         weight: 31
       - name: AI Research
         url: projects/ai/
         weight: 32
-
   - name: Blog
     url: '#posts'
     weight: 40
 
-  - name: Contact
-    url: '#contact'
+  - name: JBNU
+    url: 'https://www.jbnu.ac.kr'
     weight: 50
-
+  

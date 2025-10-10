@@ -16,6 +16,7 @@ sections:
         text: 이력서 다운로드
         url: uploads/resume.pdf # static/uploads/ 폴더에 이력서 파일이 있어야 합니다.
     design:
+      css_class: 'text-center'
       # 상단에 표시될 배경 이미지 설정
       banner:
         filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg' #  assets/media/ 폴더에 있는 풍경 이미지 파일명

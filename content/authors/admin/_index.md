@@ -69,18 +69,18 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: 축구
         description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+        percent: 90
+        icon: futbol
+      - name: 유튜브 시청
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: brands/youtube
+      - name: 러닝
         description: ''
-        percent: 80
-        icon: camera
+        percent: 70
+        icon: person-running
 
 languages:
   - name: 한국어

@@ -25,7 +25,7 @@ marketing:
 header:
   navbar:
     enable: true
-    block: floating-theme-toggler
+    block: navbar-theme-switcher
 
 # Site footer
 footer:
@@ -48,3 +48,5 @@ features:
     enable: false
   privacy_pack:
     enable: false
+  font_awesome:
+    enable: true

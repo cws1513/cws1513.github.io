@@ -5,36 +5,38 @@ type: landing
 
 # Page sections
 sections:
-  # ⬇️ 이 블록이 Hero 위젯의 역할을 합니다.
   - block: biography
     id: about
     content:
-      # content/authors/admin/ 폴더의 정보를 사용하라고 지정합니다.
       username: admin
-      # 버튼 설정
       button:
         text: 이력서 다운로드
-        url: uploads/resume.pdf # static/uploads/ 폴더에 이력서 파일이 있어야 합니다.
+        url: uploads/resume.pdf
     design:
-      css_class: 'text-center'
-      # 상단에 표시될 배경 이미지 설정
-      banner:
-        filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg' #  assets/media/ 폴더에 있는 풍경 이미지 파일명
-      # 프로필 사진(아바타) 설정
+      # ⬇️ [수정] biography와 avatar에 아래 스타일을 적용합니다.
+      biography:
+        # 텍스트, 아이콘, 버튼 등 모든 글 요소를 가운데 정렬합니다.
+        style: 'text-align: center;'
       avatar:
-        shape: circle #  프로필 사진 모양을 원형으로
-  #  이 블록 수정이 핵심입니다.
+        shape: circle
+        # 프로필 사진 자체를 가운데로 옮깁니다.
+        style: 'margin: 0 auto;'
+      # ⬆️ [수정]
+      banner:
+        filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'
 
+  # ⬇️ [수정] 중복 표시되던 Experience 블록을 삭제하고 Education만 남깁니다.
   - block: experience
     content:
       username: admin
       title: Education
     design:
       is_education_first: true
+  # ⬆️ [수정]
 
   - block: skills
     content:
-      title: Skills & Hobbies
+      title: 'Skills & Hobbies'
       username: admin
 
   - block: awards

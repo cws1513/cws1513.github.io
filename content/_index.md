@@ -40,7 +40,7 @@ sections:
 
   - block: skills
     content:
-      title: Skills
+      title: Skills & Hobbies
       username: admin
 
   - block: awards

@@ -28,13 +28,6 @@ sections:
   - block: experience
     content:
       username: admin
-      title: Experience
-    design:
-      is_education_first: false
-
-  - block: experience
-    content:
-      username: admin
       title: Education
     design:
       is_education_first: true

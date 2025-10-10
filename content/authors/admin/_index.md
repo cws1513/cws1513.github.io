@@ -73,6 +73,7 @@ skills:
         description: ''
         percent: 90
         icon: futbol
+        icon_pack: 'fas'
       - name: 유튜브 시청
         description: ''
         percent: 100
@@ -81,6 +82,7 @@ skills:
         description: ''
         percent: 70
         icon: person-running
+        icon_pack: 'fas'
 
 languages:
   - name: 한국어

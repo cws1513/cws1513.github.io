@@ -72,7 +72,7 @@ skills:
       - name: 축구
         description: ''
         percent: 90
-        icon: futbol
+        icon: fa-futbol
         icon_pack: 'fas'
       - name: 유튜브 시청
         description: ''
@@ -81,7 +81,7 @@ skills:
       - name: 러닝
         description: ''
         percent: 70
-        icon: person-running
+        icon: fa-person-running
         icon_pack: 'fas'
 
 languages:

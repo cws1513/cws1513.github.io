@@ -50,3 +50,4 @@ features:
     enable: false
   font_awesome:
     enable: true
+    block: navbar

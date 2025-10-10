@@ -3,50 +3,55 @@ title: 'Home'
 date: 2023-10-24
 type: landing
 
-design:
-  # Default section spacing
-  spacing: '4rem'
-
-# Note: `username` refers to the user's folder name in `content/authors/`
-
 # Page sections
 sections:
   - block: biography
+    id: about # 메뉴에서 '#about'으로 연결하기 위한 ID
     content:
       username: admin
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download Résumé
-        url: uploads/resume.pdf
+      # 자기소개 텍스트를 이곳에 직접 작성하거나,
+      # admin 폴더의 _index.md 파일에 있는 summary를 자동으로 불러옵니다.
+      text: ""
     design:
+      # 배경으로 사용할 배너 이미지
       banner:
-        # Upload your cover image to the `assets/media/` folder and reference it here
-        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
-      biography:
-        # Customize the style of your biography text
-        style: 'text-align: justify; font-size: 0.8em;'
-      # Avatar customization
+        filename: 'assets/media/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg' # ⬅️ assets/media/ 폴더에 있는 풍경 이미지 파일명
+      # 프로필 사진(아바타) 설정
       avatar:
-        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: rounded # Options: circle (default), square, rounded
+        # admin 폴더의 프로필 사진을 사용합니다.
+        # 이 블록이 있으면 username의 avatar 설정을 덮어씁니다.
+        filename: '' # 비워두면 username의 avatar를 사용
+        shape: circle # ⬅️ 프로필 사진 모양 (circle, square, rounded)
+  # ⬆️ [수정] Biography 블록 설정 변경
+
   - block: experience
     content:
       username: admin
+      title: Experience
     design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
+      # Education 섹션을 먼저 표시할지 여부
       is_education_first: false
+
+  - block: experience
+    content:
+      username: admin
+      title: Education
+    design:
+      is_education_first: true
+
   - block: skills
     content:
-      title: Skills & Hobbies
+      title: Skills
       username: admin
+
   - block: awards
     content:
-      title: Awards
+      title: Accomplishments
       username: admin
-  - block: languages
+
+  - block: contact
+    id: contact
     content:
-      title: Languages
-      username: admin
+      title: Contact
+      # 여기에 연락처 정보를 직접 추가할 수 있습니다.
 ---

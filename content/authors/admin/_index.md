@@ -83,13 +83,10 @@ skills:
         icon: camera
 
 languages:
-  - name: English
+  - name: 한국어
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
+  - name: English
+    percent: 85
 # Awards
 awards:
   - title: Neural Networks and Deep Learning

@@ -5,7 +5,7 @@ date: 2025-10-13
 type: landing
 
 sections:
-  # 1. 이미지 슬라이더 섹션 (변경 없음)
+  # 1. 이미지 슬라이더 섹션
   - block: slider
     content:
       slides:
@@ -44,7 +44,7 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. 자기소개 섹션 (연락처로 이동하는 버튼 추가)
+  # 2. 자기소개 섹션
   - block: about.biography
     id: about
     content:
@@ -52,13 +52,33 @@ sections:
       username: admin
       actions:
         - label: 연락하기
-          url: '/contact/'
+          url: '#contact'
           icon_pack: fas
           icon: arrow-down
-      
 
+  # 3. ✅ 새로 추가된 연락처 섹션
+  - block: contact
+    id: contact
+    content:
+      title: 연락처
+      text: |-
+        프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 아래 연락처로 편하게 연락 주세요.
+      email: cws1513@jbnu.ac.kr
+      phone: 010-5191-3088
+      autolink: true
+      form:
+        provider: ''  # 이메일 폼 기능 비활성화 (필요시 Netlify 등 설정 가능)
+      actions:
+        - label: 자세히 보기
+          url: '/contact/'
+          icon_pack: fas
+          icon: arrow-right
+    design:
+      columns: '1'
+      background:
+        color: '#f9f9f9'  # 밝은 배경으로 시각적 구분
 
-  # 3. 프로젝트 목록 섹션
+  # 4. 프로젝트 목록 섹션
   - block: collection
     id: projects
     content:

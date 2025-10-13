@@ -1,16 +1,37 @@
 ---
-title: Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020
-date: 2020-12-02
+title: 'Project 2: Soccer/Futsal Matching Database System Design using Oracle'
+date: 2025-10-13
+summary: 'Designed and implemented a database for a match-making and information management system for soccer and futsal enthusiasts using Oracle DB. The process covered everything from requirements analysis to physical design and SQL scripting.'
+tags: ["Database", "Oracle", "SQL", "DB Design", "Project"]
+
 image:
-  focal_point: 'top'
+  filename: database.png
+  caption: 'Project ER Diagram'
+  focal_point: Smart
 ---
 
-Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.
+As a team project for my database course, I designed and implemented a database for an efficient match-making and information management system for soccer and futsal enthusiasts. The goal was to solve the problems of the inefficient existing matching methods and maximize user convenience.
 
-<!--more-->
+### 1. Project Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+This project aims to build a database system that provides features such as personalized match recommendations, easy match applications and team formation, stadium information, and connections to expert lessons. The system is designed to resolve issues like difficulty in information retrieval, frequent match cancellations, and skill imbalances, thereby contributing to the vitalization of sports activities.
 
-Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.
+### 2. Requirements Analysis & Design
 
-Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.
+-   **Requirements Analysis**: We defined functional and non-functional requirements by analyzing similar services and considering user convenience. This included core functions like user management, match search, and information management, as well as non-functional aspects like data integrity, security, and performance.
+
+-   **Conceptual Design**: Based on the analysis, we identified 12 core entities such as User, Match, Stadium, and Expert. We defined their attributes and relationships, visualizing them with an **ER Diagram (ERD)**.
+
+-   **Logical Design**: We converted the conceptual design into a relational schema and performed normalization to satisfy at least the **Third Normal Form (3NF)**, minimizing data redundancy and ensuring integrity. Strict integrity constraints like Primary Keys (PK) and Foreign Keys (FK) were defined for each relation.
+
+-   **Physical Design**: The logical schema was translated into an internal schema optimized for the **Oracle** database environment, with appropriate data types and lengths assigned to each column.
+
+### 3. Database Script Implementation
+
+The entire database for the project was implemented with **four SQL scripts**:
+1.  `1_DropTables.sql`: For environment initialization.
+2.  `2_CreateTables.sql`: To create all table schemas with constraints.
+3.  `3_InsertInitialData.sql`: To insert basic data for system operation.
+4.  `4_DataManipulationAndQuery.sql`: To demonstrate DML operations and over five different `SELECT` queries, including joins and subqueries.
+
+These scripts were executed sequentially in Oracle SQL Developer to confirm the successful construction and operation of the database.

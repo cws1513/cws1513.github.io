@@ -56,7 +56,7 @@ sections:
           icon: arrow-down
 
   # 3️⃣ 💬 연락처 섹션 (기능 이동 완료)
-  - block: 연락처
+  - block: contact
     id: contact
     content:
       title: 연락처

@@ -1,54 +1,52 @@
 ---
 title: Tour
 date: 2022-10-24
-
 type: landing
 
 sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
-        align: center
-        background:
-          image:
-            filename: coders.jpg
-            filters:
-              brightness: 0.7
-          position: right
-          color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
-        align: left
-        background:
-          image:
-            filename: contact.jpg
-            filters:
-              brightness: 0.7
-          position: center
-          color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
-        align: right
-        background:
-          image:
-            filename: welcome.jpg
-            filters:
-              brightness: 0.5
-          position: center
-          color: '#333'
-        link:
-          icon: graduation-cap
-          icon_pack: fas
-          text: Join Us
-          url: ../contact/
+        
+        - title: 즐거운 학교 생활
+          content: '전북대학교 IT정보공학과에서의 성장 기록'
+          align: center
+          background:
+            image:
+              filename: school.png 
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#FFFFFF' 
+
+        - title: 개발자가 되어가는 길
+          content: '새로운 기술을 배우고 적용하며 꿈을 향해 나아갑니다.'
+          align: center
+          background:
+            image:
+              filename: coding.png
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#FFFFFF' 
+
+       
+        - title: 스트레스 해소를 위한 취미생활
+          content: '코딩 외의 다양한 활동으로 삶의 균형을 맞춥니다.'
+          align: center
+          background:
+            image:
+              filename: hobby.png 
+              filters:
+                brightness: 0.7
+            position: center
+            color: '#FFFFFF' 
+
     design:
-      # Slide height is automatic unless you force a specific height (e.g. '400px')
-      slide_height: ''
+      
       is_fullscreen: true
-      # Automatically transition through slides?
+      
       loop: false
-      # Duration of transition between slides (in ms)
-      interval: 2000
+      
+      interval: 5000
 ---

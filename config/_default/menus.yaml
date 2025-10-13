@@ -1,24 +1,31 @@
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
+#   desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Tour
-    url: tour
+  - name: Home
+    url: '/'
     weight: 10
-  - name: News
-    url: post
+
+  - name: About
+    url: 'about/'
     weight: 20
-  - name: People
-    url: people
+
+  - name: Projects
+    url: 'projects/'
     weight: 30
-  - name: Events
-    url: event
+
+  - name: Experience
+    url: 'experience/'
     weight: 40
-  - name: Publications
-    url: publication
-    weight: 50
+  
+  # 과제 요구사항인 'PDF 다운로드'를 위한 메뉴 예시입니다.
+  # static 폴더에 이력서 PDF 파일을 넣고 아래 메뉴를 활성화하세요.
+  # - name: Resume
+  #   url: 'uploads/resume.pdf'
+  #   weight: 50
+
   - name: Contact
-    url: contact
+    url: 'contact/'
     weight: 60

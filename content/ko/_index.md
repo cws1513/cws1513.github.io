@@ -50,42 +50,15 @@ sections:
     content:
       title: 자기소개
       username: admin
-      # --- 이 부분이 추가되었습니다 ---
       actions:
         - label: 연락하기
-          url: '#contact'
+          url: '/contact/'
           icon_pack: fas
           icon: arrow-down
-      # ---------------------------
+      
 
-  # 3. 연락처 섹션 (ID가 'contact'로 설정되어 있음)
-  - block: contact
-    id: contact
-    content:
-      title: 연락처
-      text: |-
-        소셜 링크를 클릭해서 연락주세요.
-      
-      autolink: true
-      
-      
-      social:
-        - icon: instagram
-          icon_pack: fab
-          link: 'https://www.instagram.com/choiwoosseong/'
-        - icon: github
-          icon_pack: fab
-          link: 'https://github.com/cws1513'
-        - icon: youtube
-          icon_pack: fab
-          link: 'https://www.youtube.com/@Allright24_' 
-        - icon: cv
-          icon_pack: ai
-          link: uploads/cv.pdf
-    design:
-      columns: '2'
 
-  # 4. 프로젝트 목록 섹션
+  # 3. 프로젝트 목록 섹션
   - block: collection
     id: projects
     content:

@@ -1,16 +1,38 @@
 ---
-title: Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020
-date: 2020-12-02
+title: '프로젝트 2: Oracle 기반 축구/풋살 매칭 데이터베이스 시스템 설계'
+date: 2025-10-13
+summary: 'Oracle DB를 활용하여 축구 및 풋살 동호인을 위한 경기 매칭 및 정보 관리 시스템의 데이터베이스를 설계하고 구현했습니다. 요구사항 분석부터 물리적 설계, SQL 스크립트 작성까지 전 과정을 수행했습니다.'
+tags: ["Database", "Oracle", "SQL", "데이터베이스 설계", "프로젝트"]
+
 image:
-  focal_point: 'top'
+  filename: database.png
+  caption: '프로젝트 ER 다이어그램'
+  focal_point: Smart
 ---
 
-Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.
+데이터베이스 수업의 팀 프로젝트로, 축구 및 풋살 동호인들을 위한 효율적인 경기 매칭 및 정보 관리 시스템의 데이터베이스를 설계하고 구현했습니다. 비효율적인 기존 매칭 방식의 문제점을 해결하고, 사용자 편의성을 극대화하는 것을 목표로 삼았습니다.
 
-<!--more-->
+### 1. 프로젝트 개요
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+본 프로젝트는 사용자별 맞춤 경기 추천, 간편한 경기 신청 및 팀 구성, 경기장 정보 제공, 전문가 레슨 연계 등 다양한 기능을 제공하는 데이터베이스 시스템을 구축하는 것을 목표로 합니다. 이를 통해 정보 탐색의 어려움, 잦은 경기 취소, 실력 불균형 문제를 해결하고 스포츠 활동 활성화에 기여하고자 했습니다.
 
-Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.
+### 2. 요구사항 분석 및 설계
 
-Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.
+-   **요구사항 분석**: 유사 서비스를 분석하고 사용자 편의성을 고려하여 기능적/비기능적 요구사항을 정의했습니다. 회원 관리, 경기 검색, 정보 관리 등 핵심 기능과 데이터 무결성, 보안, 성능 등을 요구사항에 포함했습니다.
+
+-   **개념적 설계**: 분석된 요구사항을 바탕으로 사용자, 경기, 운동장, 전문가 등 12개의 핵심 개체(Entity)를 식별하고, 각 속성과 관계를 정의하여 **ER 다이어그램(ERD)**으로 시각화했습니다.
+
+-   **논리적 설계**: 개념적 설계를 바탕으로 릴레이션 스키마를 도출하고, 데이터 중복 최소화와 무결성 보장을 위해 **제3 정규형(3NF)**을 만족하도록 정규화를 수행했습니다. 각 릴레이션에 기본 키(PK), 외래 키(FK) 등 무결성 제약조건을 엄격하게 정의했습니다.
+
+-   **물리적 설계**: 논리적 스키마를 실제 **Oracle** 데이터베이스 환경에 최적화된 내부 스키마로 변환하고, 각 컬럼에 적절한 데이터 타입과 길이를 지정했습니다.
+
+### 3. 데이터베이스 스크립트 구현
+
+프로젝트의 전체 데이터베이스는 **네 가지 SQL 스크립트**로 구현되었습니다.
+1.  `1_테이블삭제.sql`: 환경 초기화를 위한 스크립트
+2.  `2_테이블생성.sql`: 제약조건을 포함한 모든 테이블 스키마 생성
+3.  `3_초기데이터삽입.sql`: 시스템 운영을 위한 기본 데이터 삽입
+4.  `4_데이터조작및검색.sql`: 데이터 삽입, 변경, 삭제(DML) 및 조인, 서브쿼리 등을 활용한 5개 이상의 다양한 `SELECT` 쿼리 시연
+
+이 스크립트들은 Oracle SQL Developer를 통해 순차적으로 실행되며, 데이터베이스가 성공적으로 구축되고 작동하는 것을 확인했습니다.
+

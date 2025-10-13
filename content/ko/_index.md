@@ -47,11 +47,6 @@ sections:
   content:
     title: 자기소개
     username: admin
-    actions:
-    - label: 연락처 보기
-      url: '#contact'
-      icon_pack: fas
-      icon: arrow-down
 
 - block: contact
   id: contact
@@ -75,7 +70,7 @@ sections:
     count: 4
     filters:
       section: post
-      tag: '프로젝트'
+      page_type: post 
   design:
     view: compact
     columns: '2'

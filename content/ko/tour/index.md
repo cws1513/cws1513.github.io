@@ -13,7 +13,7 @@ sections:
           align: center
           background:
             image:
-              filename: school.png 
+              filename: school.jpg
               filters:
                 brightness: 0.7
             position: center
@@ -24,7 +24,7 @@ sections:
           align: center
           background:
             image:
-              filename: coding.png
+              filename: coding.jpg
               filters:
                 brightness: 0.7
             position: center
@@ -36,7 +36,7 @@ sections:
           align: center
           background:
             image:
-              filename: hobby.png 
+              filename: hobby.jpg
               filters:
                 brightness: 0.7
             position: center

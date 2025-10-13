@@ -1,77 +1,67 @@
 ---
-# Display name
-title: Nelson Bighetti
+# 표시될 이름
+title: 최우성
 
-# Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+# SEO를 위한 전체 이름
+first_name: 우성
+last_name: 최
 
-# Is this the primary user of the site?
+# 이 사이트의 기본 사용자인가?
 superuser: true
 
-# Role/position
-role: Professor of Artificial Intelligence
+# 역할/직책
+role: IT정보공학과 학부생
 
-# Organizations/Affiliations
+# 소속/기관
 organizations:
-  - name: Stanford University
-    url: ''
+  - name: 전북대학교
+    url: 'https://www.jbnu.ac.kr/'
 
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+# 간단한 자기소개
+bio: 자바스크립트, 리액트 등 새로운 언어와 기술을 배우고 익히며 프론트엔드 개발 분야에 깊은 관심을 가지고 있습니다.
 
+# 관심 분야
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 웹 개발 (Web Development)
+  - 취미 (Hobby)
+  - 알고리즘 (Algorithm)
 
+# 학력
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: IT정보공학과 학사 과정
+      institution: 전북대학교
+      year: 2021
 
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+# 소셜 네트워크 링크
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
+    link: '#contact'
+  - icon: instagram
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: 'https://instagram.com/choiwoosseong' 
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+    link: https://github.com/cws1513 
+  - icon: youtube
+    icon_pack: fab
+    link: 'https://www.youtube.com/@Allright24_'
+
+# 이력서 PDF 파일 다운로드 링크
 # - icon: cv
 #   icon_pack: ai
-#   link: files/cv.pdf
+#   link: uploads/cv.pdf
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+# 이메일
 email: ''
 
-# Highlight the author in author lists? (true/false)
-highlight_name: false
+highlight_name: true
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - 학생
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+안녕하세요, 전북대학교 IT정보공학과에 재학 중인 최우성입니다. 저는 자바스크립트와 리액트 같은 새로운 언어와 기술을 배우고 익히는 과정에 큰 즐거움을 느끼며, 이를 통해 사용자에게 더 나은 경험을 제공하는 프론트엔드 개발 분야에 깊은 관심을 가지고 있습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+알고리즘 문제 해결을 통해 논리적 사고력을 기르고, 다양한 취미 활동으로 창의적인 영감을 얻습니다. 이 웹사이트는 저의 기술적 성장 과정과 프로젝트들을 기록하는 공간입니다. 함께 배우고 성장할 기회를 언제나 환영합니다.

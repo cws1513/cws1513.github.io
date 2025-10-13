@@ -65,7 +65,7 @@ sections:
         아래 소셜 링크를 클릭하시거나, 버튼을 눌러 상세 연락처 페이지로 이동하세요.
       actions:
         - label: 이메일 및 전화번호 보기
-          url: '/contact/'
+          url: '/ko/contact/'
           icon_pack: fas
           icon: envelope
         - label: GitHub 방문하기

@@ -1,6 +1,7 @@
 ---
 title: '프로젝트 1: Java와 Swing을 활용한 2D 나루토 팬 게임'
 date: 2025-10-13
+draft: false 
 summary: 'Java Swing을 기반으로 제작한 2D 횡스크롤 나루토 팬 게임입니다. 캐릭터 변경, 아이템, 보스전 등 다양한 기능을 구현했습니다.'
 tags: ["Java", "게임 개발", "프로젝트"]
 

@@ -4,15 +4,15 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: 홈
     url: '/'
     weight: 10
 
-  - name: About
-    url: 'about/'
+  - name: 
+    url: 소개
     weight: 20
 
-  - name: Projects
+  - name: 프로젝트
     url: 'projects/'
     weight: 30
 
@@ -23,6 +23,6 @@ main:
   #   url: 'uploads/resume.pdf'
   #   weight: 50
 
-  - name: Contact
+  - name: 연락처
     url: 'contact/'
     weight: 60

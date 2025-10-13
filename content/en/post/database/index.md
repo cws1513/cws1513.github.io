@@ -29,9 +29,9 @@ This project aims to build a database system that provides features such as pers
 ### 3. Database Script Implementation
 
 The entire database for the project was implemented with **four SQL scripts**:
-1.  `1_DropTables.sql`: For environment initialization.
-2.  `2_CreateTables.sql`: To create all table schemas with constraints.
-3.  `3_InsertInitialData.sql`: To insert basic data for system operation.
-4.  `4_DataManipulationAndQuery.sql`: To demonstrate DML operations and over five different `SELECT` queries, including joins and subqueries.
+1.  `DropTables.sql`: For environment initialization.
+2.  `CreateTables.sql`: To create all table schemas with constraints.
+3.  `InsertInitialData.sql`: To insert basic data for system operation.
+4.  `DataManipulationAndQuery.sql`: To demonstrate DML operations and over five different `SELECT` queries, including joins and subqueries.
 
 These scripts were executed sequentially in Oracle SQL Developer to confirm the successful construction and operation of the database.

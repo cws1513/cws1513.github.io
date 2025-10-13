@@ -70,7 +70,7 @@ sections:
     count: 4
     filters:
       section: post
-     # page_type: post 
+      page_type: post 
   design:
     view: compact
     columns: '2'

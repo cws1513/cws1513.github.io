@@ -2,7 +2,6 @@
 title: 연락처
 date: 2025-10-13 
 type: landing
-draft : true 
 
 sections:
   - block: contact

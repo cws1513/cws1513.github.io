@@ -1,11 +1,10 @@
 ---
-# 홈페이지 제목은 비워두어 사이트의 기본 제목을 사용하도록 합니다.
 title:
 date: 2025-10-13
 type: landing
 
 sections:
-  # 1. 이미지 슬라이더 섹션
+  # 1. 이미지 슬라이더
   - block: slider
     content:
       slides:
@@ -51,32 +50,37 @@ sections:
       title: 자기소개
       username: admin
       actions:
-        - label: 연락하기
+        - label: 연락처 보기
           url: '#contact'
           icon_pack: fas
           icon: arrow-down
 
-  # 3. ✅ 새로 추가된 연락처 섹션
+  # 3. ✅ 새 연락처 섹션
   - block: contact
     id: contact
     content:
       title: 연락처
       text: |-
-        프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 아래 연락처로 편하게 연락 주세요.
-      email: cws1513@jbnu.ac.kr
-      phone: 010-5191-3088
-      autolink: true
-      form:
-        provider: ''  # 이메일 폼 기능 비활성화 (필요시 Netlify 등 설정 가능)
+        👋 협업이나 문의가 있으신가요?  
+        아래 소셜 링크를 클릭하시거나, 버튼을 눌러 상세 연락처 페이지로 이동하세요.
       actions:
-        - label: 자세히 보기
+        - label: 이메일 및 전화번호 보기
           url: '/contact/'
           icon_pack: fas
-          icon: arrow-right
+          icon: envelope
+        - label: GitHub 방문하기
+          url: 'https://github.com/cws1513'
+          icon_pack: fab
+          icon: github
+        - label: Instagram
+          url: 'https://instagram.com/choiwoosseong'
+          icon_pack: fab
+          icon: instagram
+      autolink: false
     design:
       columns: '1'
       background:
-        color: '#f9f9f9'  # 밝은 배경으로 시각적 구분
+        color: '#f9f9f9'
 
   # 4. 프로젝트 목록 섹션
   - block: collection

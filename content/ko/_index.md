@@ -88,7 +88,7 @@ sections:
     content:
       title: 프로젝트
       text: ''
-      count: 4
+      count: 3
       filters:
         page_type: post
       order: desc

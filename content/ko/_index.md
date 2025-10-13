@@ -91,8 +91,9 @@ sections:
       text: ''
       count: 3
       filters:
+        section: post
         page_type: post
-      order: desc
+      #order: desc
     design:
       view: compact
       columns: '2'

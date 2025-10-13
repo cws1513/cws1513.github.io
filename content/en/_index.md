@@ -1,16 +1,15 @@
----
-# Leave the homepage title empty to use the site's default title.
+# Leave the homepage title blank to use the site's default title.
 title:
 date: 2025-10-13
 type: landing
 
 sections:
-  # 1. Image Slider Section
+  # 1. Image Slider Section (No changes)
   - block: slider
     content:
       slides:
-        - title: Joyful School Life
-          content: 'A record of my growth at Jeonbuk National University, Dept. of IT Information Engineering'
+        - title: Enjoyable School Life
+          content: 'A record of my growth in the Department of IT Information Engineering at Jeonbuk National University.'
           align: center
           background:
             image:
@@ -19,8 +18,7 @@ sections:
                 brightness: 0.7
             position: center
             color: '#FFFFFF'
-
-        - title: On the Path to Becoming a Developer
+        - title: The Path to Becoming a Developer
           content: 'Moving towards my dream by learning and applying new technologies.'
           align: center
           background:
@@ -30,7 +28,6 @@ sections:
                 brightness: 0.7
             position: center
             color: '#FFFFFF'
-
         - title: Hobbies for Stress Relief
           content: 'Balancing life with various activities outside of coding.'
           align: center
@@ -46,47 +43,50 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. Hero Block
-  - block: hero
+  # 2. About Me Section (A simple introduction without social links)
+  - block: about.biography
+    id: about
     content:
-      title: |
-        Woosung Choi's
-        Developer Portfolio
-      # Automatically fetches the profile picture from content/authors/admin/
-      image:
-        filename: avatar.png
-      text: |
-        <br>
-        
-        A frontend developer aspirant who enjoys learning and applying new technologies. You can check out my growth process and projects here.
+      title: About Me
+      username: admin
 
-  # 3. Collection Block (Projects)
-  - block: collection
-    id: posts
-    content:
-      title: Recent Projects
-      text: ''
-      # Number of posts to show (3 or more for the assignment)
-      count: 3
-      # Show content of type "post"
-      filters:
-        page_type: post
-      # Order by date descending
-      order: desc
-    design:
-      # 'compact' view provides a clean list format.
-      view: compact
-      columns: '2'
-
-  # 4. Contact Block
+  # 3. Contact Section (Displays social link icons)
   - block: contact
     id: contact
     content:
       title: Contact
       text: |-
-        Please feel free to contact me for project collaboration proposals or any other questions.
-      # Email, phone, and social links are automatically pulled from authors/admin/_index.md.
+        Please contact me by clicking the social links.
+      
       autolink: true
+      
+      
+      social:
+        - icon: instagram
+          icon_pack: fab
+          link: 'https://www.instagram.com/choiwoosseong/'
+        - icon: github
+          icon_pack: fab
+          link: 'https://github.com/cws1513'
+        - icon: youtube
+          icon_pack: fab
+          link: 'https://www.youtube.com/@Allright24_' 
+        - icon: cv
+          icon_pack: ai
+          link: uploads/cv.pdf
     design:
       columns: '2'
----
+
+  # 4. Project List Section
+  - block: collection
+    id: projects
+    content:
+      title: Projects
+      text: ''
+      count: 4
+      filters:
+        page_type: post
+      order: desc
+    design:
+      view: compact
+      columns: '2'

@@ -7,9 +7,11 @@ ko:
   title: 최우성의 포트폴리오
   # Uncomment for multi-lingual sites, and move Korean content into `ko` sub-folder.
   contentDir: content/ko
+  weight: 1
 
 en:
   languageCode: en-US
   title: Woosung Choi's Portfolio
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   contentDir: content/en
+  weight: 2

@@ -5,7 +5,7 @@ date: 2025-10-13
 type: landing
 
 sections:
-  # 1. 이미지 슬라이더 섹션
+  # 1. 이미지 슬라이더 섹션 (변경 없음)
   - block: slider
     content:
       slides:
@@ -44,24 +44,39 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. 자기소개 (프로필) 섹션
+  # 2. 자기소개 섹션 (소셜 링크가 없는 순수 소개)
   - block: about.biography
     id: about
     content:
       title: 자기소개
       username: admin
 
+  # 3. 연락처 섹션 (소셜 링크 아이콘 표시)
   - block: contact
     id: contact
     content:
       title: 연락처
       text: |-
-        아래 연락처나 소셜 링크를 통해 편하게 연락 주세요.
-      # authors/admin/_index.md 에서 이메일, 전화번호를 자동으로 가져옵니다.
+        소셜 링크를 클릭해서 연락주세요.
+      # authors/admin/_index.md에서 이메일 주소를 자동으로 가져옵니다.
       autolink: true
+      
+      # 여기에 소셜 아이콘들을 직접 추가합니다.
+      social:
+        - icon: instagram
+          icon_pack: fab
+          link: 'https://www.instagram.com/cws1513/'
+        - icon: github
+          icon_pack: fab
+          link: 'https://github.com/cws1513'
+        - icon: youtube
+          icon_pack: fab
+          link: 'https://www.youtube.com/channel/UC..._your_channel_id' # 여기에 실제 유튜브 채널 링크를 넣어주세요.
+        - icon: cv
+          icon_pack: ai
+          link: uploads/cv.pdf
     design:
-      # '1'로 설정하면 중앙에 넓게 표시됩니다.
-      columns: '1'
+      columns: '2'
 
   # 4. 프로젝트 목록 섹션
   - block: collection

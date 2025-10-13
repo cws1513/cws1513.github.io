@@ -6,16 +6,17 @@
 # Appearance
 appearance:
   theme_day: minimal
-  **theme_night: minimal 
+  theme_night: minimal
+  font: native
   font_size: L
 
 # SEO
 marketing:
   seo:
-    **site_type: Person 
+    site_type: Person
     local_business_type: ''
     org_name: ''
-    description: '최우성의 포트폴리오 웹사이트입니다.' # [수정] 구글 검색 시 보일 설명**
+    description: '최우성의 개인 기술 블로그 및 포트폴리오 웹사이트입니다.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -23,7 +24,7 @@ marketing:
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: '' 
+    google: ''
     baidu: ''
 
 # Site header
@@ -32,15 +33,15 @@ header:
     enable: true
     align: r
     show_logo: true
-    **show_language: true 
+    show_language: true
     show_day_night: true
     show_search: true
-    **highlight_active_link: true 
+    highlight_active_link: true
 
 # Site footer
 footer:
   copyright:
-    **notice: '© {year} Choi Woosung. All Rights Reserved.' 
+    notice: '© {year} Choi Woosung. All Rights Reserved.'
     license:
       enable: true
       allow_derivatives: false
@@ -65,7 +66,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    **url: 'https://github.com/cws1513/cws1513.github.io' 
+    url: 'https://github.com/cws1513/cws1513.github.io'
     content_dir: content
     branch: main
   avatar:

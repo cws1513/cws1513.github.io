@@ -1,4 +1,4 @@
-# Leave the homepage title blank to use the site's default title.
+---# Leave the homepage title blank to use the site's default title.
 title:
 date: 2025-10-13
 type: landing
@@ -90,3 +90,4 @@ sections:
     design:
       view: compact
       columns: '2'
+---

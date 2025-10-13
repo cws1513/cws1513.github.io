@@ -44,14 +44,21 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. 자기소개 섹션 (소셜 링크가 없는 순수 소개)
+  # 2. 자기소개 섹션 (연락처로 이동하는 버튼 추가)
   - block: about.biography
     id: about
     content:
       title: 자기소개
       username: admin
+      # --- 이 부분이 추가되었습니다 ---
+      actions:
+        - label: 연락하기
+          url: '#contact'
+          icon_pack: fas
+          icon: arrow-down
+      # ---------------------------
 
-  # 3. 연락처 섹션 (소셜 링크 아이콘 표시)
+  # 3. 연락처 섹션 (ID가 'contact'로 설정되어 있음)
   - block: contact
     id: contact
     content:

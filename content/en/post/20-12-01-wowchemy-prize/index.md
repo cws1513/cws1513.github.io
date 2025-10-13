@@ -1,14 +1,22 @@
 ---
-title: Richard Hendricks Wins First Place in the Wowchemy Prize
-date: 2020-12-01
+title: 'Project 1: 2D Naruto Fan Game with Java and Swing'
+date: 2025-10-13
+summary: 'A 2D side-scrolling Naruto fan game project based on Java Swing, featuring character switching, items, boss battles, and more.'
+tags: ["Java", "Game Development", "Project"]
+
+image:
+  filename: game.png
+  caption: 'Naruto Game Screenshot'
+  focal_point: Smart
 ---
 
-Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.
+For a personal project, I decided to create a 2D side-scrolling action game based on my favorite anime, 'Naruto,' using Java. I studied the basic structure by referencing an existing 2D game source code on GitHub, but I focused on implementing new features by adding my own ideas.
 
-<!--more-->
+## 🚀 Key Features
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+-   **Multiple Playable Characters**: Freely switch between various characters like Naruto and Sasuke during gameplay.
+-   **Item System**: Acquire items with various effects, such as health recovery and attack power boosts.
+-   **Score and Life System**: Implemented the classic fun of earning points by defeating enemies and challenging stages with a limited number of lives.
+-   **Unique Boss Monsters**: At the end of each stage, a powerful boss with multi-phase attack patterns appears.
 
-Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.
-
-Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.
+It was fascinating to implement everything from graphics rendering to keyboard input and collision detection using only pure **Java**, without any external game engines. I especially enjoyed the process of designing various game elements like characters, items, and enemies in an object-oriented way and expanding them with diverse features.

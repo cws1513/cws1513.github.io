@@ -89,7 +89,7 @@ sections:
     content:
       title: 프로젝트
       text: ''
-      count: 3
+      count: 4
       filters:
         section: post
         page_type: post

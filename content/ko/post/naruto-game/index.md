@@ -1,14 +1,22 @@
 ---
-title: Richard Hendricks Wins First Place in the Wowchemy Prize
-date: 2020-12-01
+title: '프로젝트 1: Java와 Swing을 활용한 2D 나루토 팬 게임'
+date: 2025-10-13
+summary: 'Java Swing을 기반으로 제작한 2D 횡스크롤 나루토 팬 게임입니다. 캐릭터 변경, 아이템, 보스전 등 다양한 기능을 구현했습니다.'
+tags: ["Java", "게임 개발", "프로젝트"]
+
+image:
+  filename: game.png
+  caption: '나루토 게임 플레이 스크린샷'
+  focal_point: Smart
 ---
 
-Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.
+평소 좋아하던 애니메이션 '나루토'를 주제로, Java를 활용한 2D 횡스크롤 액션 게임을 만들어보는 개인 프로젝트를 진행했습니다. 기존에 공개된 GitHub의 2D 게임 소с 코드를 참고하여 기본 구조를 학습하고, 저만의 아이디어를 추가하여 새로운 기능을 구현하는 데 집중했습니다.
 
-<!--more-->
+## 🚀 주요 기능 및 특징
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+-   **다양한 플레이어블 캐릭터**: 나루토, 사스케 등 여러 캐릭터를 게임 중에 자유롭게 변경하며 플레이할 수 있습니다.
+-   **아이템 시스템**: 체력 회복, 공격력 증가 등 다양한 효과를 가진 아이템을 획득할 수 있습니다.
+-   **점수 및 생명 시스템**: 적을 처치하여 점수를 얻고, 정해진 목숨으로 스테이지에 도전하는 고전 게임의 재미를 구현했습니다.
+-   **개성 있는 보스 몬스터**: 각 스테이지의 마지막에는 여러 단계의 공격 패턴을 가진 강력한 보스가 등장합니다.
 
-Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.
-
-Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.
+외부 게임 엔진 없이 순수 **Java**만을 사용하여 그래픽 처리부터 키보드 입력, 충돌 감지까지 직접 구현하는 과정이 매우 흥미로웠습니다. 특히 캐릭터, 아이템, 적과 같은 게임의 여러 요소들을 객체 지향적으로 설계하고 다양한 기능으로 확장해나가는 과정에서 큰 즐거움을 느낄 수 있었습니다.

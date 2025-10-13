@@ -3,7 +3,7 @@ title: '프로젝트 3: VS Code와 GitHub를 이용한 포트폴리오 웹사이
 date: 2025-10-13
 draft: false 
 summary: 'Hugo Blox 프레임워크를 기반으로, VS Code와 Git을 사용하여 제작한 개인 포트폴리오 웹사이트입니다. 정적 사이트 생성의 원리를 배우고 GitHub Pages를 통해 배포했습니다.'
-tags: ["Hugo", "VS Code", "Git", "GitHub Pages", "포트폴리오","프로젝트"]
+tags: ["Hugo", "VS Code", "Git", "GitHub Pages", "포트폴리오"]
 
 # 1단계에서 assets/media/ 폴더에 넣은 이미지 파일을 연결합니다.
 image:

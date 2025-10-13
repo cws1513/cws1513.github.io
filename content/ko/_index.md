@@ -6,7 +6,6 @@ type: landing
 
 sections:
   # 1. 이미지 슬라이더 섹션
-  # 이 블록은 우리가 만든 이미지 슬라이더를 화면 맨 위에 표시합니다.
   - block: slider
     content:
       slides:
@@ -45,23 +44,18 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. 자기소개 (프로필) 섹션
-  # 이 부분이 가장 중요합니다!
-  # 'about.biography' 블록은 자기소개 페이지의 내용을 그대로 가져와 보여주는 마법 같은 기능입니다.
+  
   - block: about.biography
     id: about
     content:
-      title: About Me
-      # username: admin 은 "content/authors/admin/" 폴더에 있는
-      # _index.md 파일의 모든 정보(사진, bio, 소셜 링크)를 가져오라는 뜻입니다.
+      title: 자기소개 
       username: admin
 
-  # 3. Collection 블록: 프로젝트 글 목록을 보여주는 섹션
-  # 이 블록은 post 폴더에 있는 프로젝트 글들을 자동으로 모아서 보여줍니다.
+  # 3. 프로젝트 목록 섹션
   - block: collection
     id: projects
     content:
-      title: Projects
+      title: 프로젝트 
       text: ''
       count: 3
       filters:

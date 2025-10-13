@@ -16,9 +16,6 @@ main:
     url: 'projects/'
     weight: 30
 
-  - name: Experience
-    url: 'experience/'
-    weight: 40
   
   # 과제 요구사항인 'PDF 다운로드'를 위한 메뉴 예시입니다.
   # static 폴더에 이력서 PDF 파일을 넣고 아래 메뉴를 활성화하세요.

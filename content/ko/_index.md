@@ -75,7 +75,7 @@ sections:
     count: 4
     filters:
       section: post
-      page_type: post
+      tag: '프로젝트'
   design:
     view: compact
     columns: '2'

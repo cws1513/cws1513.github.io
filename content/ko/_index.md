@@ -65,13 +65,13 @@ sections:
       social:
         - icon: instagram
           icon_pack: fab
-          link: 'https://www.instagram.com/cws1513/'
+          link: 'https://www.instagram.com/choiwoosseong/'
         - icon: github
           icon_pack: fab
           link: 'https://github.com/cws1513'
         - icon: youtube
           icon_pack: fab
-          link: 'https://www.youtube.com/channel/UC..._your_channel_id' # 여기에 실제 유튜브 채널 링크를 넣어주세요.
+          link: 'https://www.youtube.com/@Allright24_' 
         - icon: cv
           icon_pack: ai
           link: uploads/cv.pdf

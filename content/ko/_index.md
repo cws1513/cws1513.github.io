@@ -4,7 +4,7 @@ date: 2025-10-13
 type: landing
 
 sections:
-  # 1. 이미지 슬라이더
+  # 1️⃣ 슬라이더
   - block: slider
     content:
       slides:
@@ -43,7 +43,7 @@ sections:
       loop: true
       interval: 5000
 
-  # 2. 자기소개 섹션
+  # 2️⃣ 자기소개 섹션
   - block: about.biography
     id: about
     content:
@@ -55,17 +55,18 @@ sections:
           icon_pack: fas
           icon: arrow-down
 
-  # 3. ✅ 새 연락처 섹션
+  # 3️⃣ 💬 연락처 섹션 (기능 이동 완료)
   - block: contact
     id: contact
     content:
       title: 연락처
       text: |-
-        👋 협업이나 문의가 있으신가요?  
-        아래 소셜 링크를 클릭하시거나, 버튼을 눌러 상세 연락처 페이지로 이동하세요.
+        📞 프로젝트나 협업 문의가 있으신가요?  
+        아래 버튼을 눌러 이메일·전화번호를 확인하거나,  
+        소셜 링크를 클릭해 주세요.
       actions:
         - label: 이메일 및 전화번호 보기
-          url: '/ko/contact/'
+          url: '/ko/contact/'        # ✅ contact.md 페이지로 이동
           icon_pack: fas
           icon: envelope
         - label: GitHub 방문하기
@@ -82,13 +83,13 @@ sections:
       background:
         color: '#f9f9f9'
 
-  # 4. 프로젝트 목록 섹션
+  # 4️⃣ 💼 프로젝트 섹션 (연락처 기능 제거 완료)
   - block: collection
     id: projects
     content:
       title: 프로젝트
       text: ''
-      count: 4
+      count: 3
       filters:
         page_type: post
       order: desc

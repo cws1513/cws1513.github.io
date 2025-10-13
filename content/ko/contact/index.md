@@ -4,7 +4,7 @@ date: 2025-10-13
 type: landing
 
 sections:
-  - block: contact
+  - block: 연락처
     content:
       title: 연락처
       text: |-

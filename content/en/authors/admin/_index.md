@@ -1,77 +1,67 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Woosung Choi
 
 # Full Name (for SEO)
-first_name: Nelson
-last_name: Bighetti
+first_name: Woo Seong
+last_name: Choi
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Undergraduate, Dept. of IT Information Engineering
 
 # Organizations/Affiliations
 organizations:
-  - name: Stanford University
-    url: ''
+  - name: Jeonbuk National University
+    url: 'https://www.jbnu.ac.kr/eng/'
 
-# Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+# Short bio
+bio: I am deeply interested in frontend development, learning new languages and technologies like JavaScript and React.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Web Development
+  - Hobby
+  - Algorithm
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: BS in IT Information Engineering
+      institution: Jeonbuk National University
+      year: 2021
 
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
+# Social Networking
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
-  - icon: twitter
+    link: '#contact'
+  - icon: instagram
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-  - icon: google-scholar
-    icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: 'https://instagram.com/choiwoosseong'
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+    link: 'https://github.com/cws1513'
+  - icon: youtube
+    icon_pack: fab
+    link: 'https://www.youtube.com/@Allright24_'
+
+# Link to a PDF of your resume/CV
 # - icon: cv
 #   icon_pack: ai
-#   link: files/cv.pdf
+#   link: uploads/cv.pdf
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+# Email
 email: ''
 
-# Highlight the author in author lists? (true/false)
-highlight_name: false
+# Highlight the author in author lists?
+highlight_name: true
 
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
+# User groups
 user_groups:
-  - Researchers
+  - Students
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello, I am Woosung Choi, an undergraduate student in the Department of IT Information Engineering at Jeonbuk National University. I find great joy in the process of learning and mastering new languages and technologies like JavaScript and React, and through this, I have a deep interest in the field of front-end development, which focuses on providing better user experiences.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I cultivate logical thinking by solving algorithmic problems and gain creative inspiration from various hobbies. This website is a space to record my technical growth and projects. I always welcome opportunities to learn and grow together.

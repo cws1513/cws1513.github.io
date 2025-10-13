@@ -58,10 +58,10 @@ sections:
       title: 연락처
       text: |-
         소셜 링크를 클릭해서 연락주세요.
-      # authors/admin/_index.md에서 이메일 주소를 자동으로 가져옵니다.
+      
       autolink: true
       
-      # 여기에 소셜 아이콘들을 직접 추가합니다.
+      
       social:
         - icon: instagram
           icon_pack: fab
@@ -84,7 +84,7 @@ sections:
     content:
       title: 프로젝트
       text: ''
-      count: 3
+      count: 4
       filters:
         page_type: post
       order: desc

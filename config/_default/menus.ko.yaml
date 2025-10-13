@@ -1,0 +1,14 @@
+
+main:
+  - name: 홈
+    url: '#' # 빌드 오류를 방지하고, 페이지 최상단으로 이동시킵니다.
+    weight: 10
+  - name: 소개
+    url: '#about' # '자기소개' 섹션으로 이동합니다.
+    weight: 20
+  - name: 연락처
+    url: '#contact' # '연락처' 섹션으로 이동합니다.
+    weight: 30
+  - name: 프로젝트
+    url: '#projects' # '프로젝트' 섹션으로 이동합니다.
+    weight: 40

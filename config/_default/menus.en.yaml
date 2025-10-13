@@ -1,0 +1,15 @@
+# config/_default/menus.en.yaml
+
+main:
+  - name: Home
+    url: '#' # Prevents build errors and links to the top of the page.
+    weight: 10
+  - name: About
+    url: '#about' # Links to the 'About' section.
+    weight: 20
+  - name: Contact
+    url: '#contact' # Links to the 'Contact' section.
+    weight: 30
+  - name: Projects
+    url: '#projects' # Links to the 'Projects' section.
+    weight: 40

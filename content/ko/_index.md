@@ -44,18 +44,30 @@ sections:
       loop: true
       interval: 5000
 
-  
+  # 2. 자기소개 (프로필) 섹션
   - block: about.biography
     id: about
     content:
-      title: 자기소개 
+      title: 자기소개
       username: admin
 
-  # 3. 프로젝트 목록 섹션
+  - block: contact
+    id: contact
+    content:
+      title: 연락처
+      text: |-
+        아래 연락처나 소셜 링크를 통해 편하게 연락 주세요.
+      # authors/admin/_index.md 에서 이메일, 전화번호를 자동으로 가져옵니다.
+      autolink: true
+    design:
+      # '1'로 설정하면 중앙에 넓게 표시됩니다.
+      columns: '1'
+
+  # 4. 프로젝트 목록 섹션
   - block: collection
     id: projects
     content:
-      title: 프로젝트 
+      title: 프로젝트
       text: ''
       count: 3
       filters:

@@ -4,21 +4,18 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 appearance:
   theme_day: minimal
-  theme_night:
-  font: native
+  **theme_night: minimal 
   font_size: L
 
 # SEO
-
 marketing:
   seo:
-    site_type: Organization
+    **site_type: Person 
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
+    description: '최우성의 포트폴리오 웹사이트입니다.' # [수정] 구글 검색 시 보일 설명**
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -26,26 +23,24 @@ marketing:
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: ''
+    google: '' 
     baidu: ''
 
 # Site header
-
 header:
   navbar:
     enable: true
     align: r
     show_logo: true
-    show_language: false
+    **show_language: true 
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    **highlight_active_link: true 
 
 # Site footer
-
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    **notice: '© {year} Choi Woosung. All Rights Reserved.' 
     license:
       enable: true
       allow_derivatives: false
@@ -53,14 +48,12 @@ footer:
       allow_commercial: false
 
 # Localization
-
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
 # Site features
-
 features:
   syntax_highlighter:
     enable: false
@@ -72,7 +65,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    **url: 'https://github.com/cws1513/cws1513.github.io' 
     content_dir: content
     branch: main
   avatar:
@@ -103,7 +96,6 @@ features:
     zoom: 15
 
 # Extensions
-
 extensions:
   decap_cms:
     branch: main
@@ -112,7 +104,6 @@ extensions:
     enable: true
 
 # Citation style
-
 publications:
   date_format: January 2006
   citation_style: apa

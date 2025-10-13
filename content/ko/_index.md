@@ -1,80 +1,51 @@
 ---
-# Leave the homepage title empty to use the site title
+# 홈페이지 제목은 비워두어 사이트의 기본 제목을 사용하도록 합니다.
 title:
-date: 2022-10-24
+date: 2025-10-13
 type: landing
 
 sections:
+ 
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        최우성의
+        개발자 포트폴리오
+      
       image:
-        filename: welcome.jpg
+        filename: avatar.png
       text: |
         <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
+        새로운 기술을 배우고 적용하는 것을 즐기는 프론트엔드 개발자 지망생입니다. 저의 성장 과정과 프로젝트들을 이곳에서 확인하실 수 있습니다.
+
   
   - block: collection
+    id: posts
     content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
+      title: 최근 프로젝트
+      text: ''
+      
+      count: 3
+      
       filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
+        page_type: post
+     
       order: desc
-      page_type: post
     design:
-      view: card
-      columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+     
+      view: compact
+      columns: '2'
 
-  - block: collection
+ 
+  - block: contact
+    id: contact
     content:
-      title: Latest Preprints
-      text: ""
-      count: 5
-      filters:
-        folders:
-          - publication
-        publication_type: 'article'
+      title: Contact
+      text: |-
+        프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
+      
+      autolink: true
     design:
-      view: citation
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
-      columns: '1'
+      columns: '2'
 ---

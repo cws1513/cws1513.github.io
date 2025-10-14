@@ -1,6 +1,6 @@
 ---
 title: 'Project 3: Building a Portfolio Website with VS Code & GitHub'
-date: 2025-10-13
+date: 2025-10-14
 draft: false
 summary: 'A personal portfolio website built using the Hugo Blox framework with VS Code and Git. Learned the principles of static site generation and deployed it via GitHub Pages.'
 tags: ["Hugo", "VS Code", "Git", "GitHub Pages", "Portfolio"]

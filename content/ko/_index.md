@@ -52,18 +52,8 @@ sections:
   id: contact
   content:
     title: 연락처
-    subtitle: 프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
-    text: |-
-      <div style="margin-top: 1rem;">
-        <i class="fas fa-envelope pr-2" aria-hidden="true"></i><a href="mailto:cws1513@jbnu.ac.kr">cws1513@jbnu.ac.kr</a>
-      </div>
-      <div style="margin-top: 0.5rem;">
-        <i class="fas fa-phone pr-2" aria-hidden="true"></i><a href="tel:010-5191-3088">010-5191-3088</a>
-      </div>
-      <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
-        <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i>전북대학교 공과대학 7호관
-      </div>
-      <iframe src="http://googleusercontent.com/maps/google.com/7" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    subtitle: 테스트 중입니다...
+    text: '이 글자가 보이면 성공입니다.'
   design:
     columns: '1'
     background:

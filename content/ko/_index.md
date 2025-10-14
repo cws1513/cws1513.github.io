@@ -13,8 +13,7 @@ sections:
       background:
         image:
           filename: school.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
     - title: 개발자가 되어가는 길
@@ -23,8 +22,7 @@ sections:
       background:
         image:
           filename: coding.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
     - title: 스트레스 해소를 위한 취미생활
@@ -33,8 +31,7 @@ sections:
       background:
         image:
           filename: hobby.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
   design:
@@ -67,10 +64,11 @@ sections:
   content:
     title: 프로젝트
     text: ''
-    count: 4
+    count: 3
+    # 오직 'post' 폴더 안에 있는 것만 가져오도록 필터를 강화합니다.
     filters:
-      section: post
-      page_type: post 
+      folders:
+        - post
   design:
     view: compact
     columns: '2'

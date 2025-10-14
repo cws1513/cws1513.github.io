@@ -13,8 +13,7 @@ sections:
       background:
         image:
           filename: school.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
     - title: On the Path to Becoming a Developer
@@ -23,8 +22,7 @@ sections:
       background:
         image:
           filename: coding.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
     - title: Hobbies for Stress Relief
@@ -33,8 +31,7 @@ sections:
       background:
         image:
           filename: hobby.jpg
-          filters:
-            brightness: 0.7
+          filters: { brightness: 0.7 }
         position: center
         color: '#FFFFFF'
   design:
@@ -67,10 +64,11 @@ sections:
   content:
     title: Projects
     text: ''
-    count: 4
+    count: 3
+    # Strengthen the filter to only fetch content from the 'post' folder.
     filters:
-      section: post
-      page_type: post
+      folders:
+        - post
   design:
     view: compact
     columns: '2'

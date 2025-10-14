@@ -11,21 +11,30 @@ sections:
         content: '전북대학교 IT정보공학과에서의 성장 기록'
         align: center
         background:
-          image: {filename: school.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: school.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
       - title: 개발자가 되어가는 길
         content: '새로운 기술을 배우고 적용하며 꿈을 향해 나아갑니다.'
         align: center
         background:
-          image: {filename: coding.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: coding.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
       - title: 스트레스 해소를 위한 취미생활
         content: '코딩 외의 다양한 활동으로 삶의 균형을 맞춥니다.'
         align: center
         background:
-          image: {filename: hobby.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: hobby.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
   design:
@@ -55,7 +64,7 @@ sections:
       <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
         <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i>전북대학교 공과대학 7호관
       </div>
-      <iframe src="http://googleusercontent.com/maps/google.com/7" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.090680694084!2d127.1246238152641!3d35.8485009801518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357022e0e3a9c3c7%3A0x7b8b4b8a5d3e2b1!2z7KCE67aA64yA7ZWZ6rWQIOqzteuNsOq1rCDqsIQ37Zi4!5e0!3m2!1sko!2skr!4v1665731111111!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   design:
     columns: '1'
     background:

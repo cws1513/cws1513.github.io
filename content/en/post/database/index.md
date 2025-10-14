@@ -1,6 +1,7 @@
 ---
 title: 'Project 2: Soccer/Futsal Matching Database System Design using Oracle'
 date: 2025-10-13
+draft: false 
 summary: 'Designed and implemented a database for a match-making and information management system for soccer and futsal enthusiasts using Oracle DB. The process covered everything from requirements analysis to physical design and SQL scripting.'
 tags: ["Database", "Oracle", "SQL", "DB Design", "Project"]
 

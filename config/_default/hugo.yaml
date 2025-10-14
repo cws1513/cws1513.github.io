@@ -1,13 +1,21 @@
-
+# 1. 기본 정보
 title: '최우성 포트폴리오'
 baseURL: 'https://cws1513.github.io/'
 
-
+# 2. 언어 설정
 defaultContentLanguage: ko
 hasCJKLanguage: true
 
-
-paginate: 10 
-summaryLength: 30 
+# 3. 콘텐츠 관리
+paginate: 10
+summaryLength: 30
 enableEmoji: true
 
+# 4. 보안 정책 (오류 해결)
+# 이 부분이 테마에 필요한 시스템 변수 접근을 허용해 줍니다.
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^CI$
+      - WC_POST_CSS

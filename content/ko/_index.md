@@ -39,6 +39,7 @@ sections:
     title: 자기소개
     username: admin
 
+# --- 이 연락처 블록을 수정했습니다 ---
 - block: contact
   id: contact
   content:
@@ -47,26 +48,27 @@ sections:
       프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
     email: cws1513@jbnu.ac.kr
     phone: 010-5191-3088
-    address:
-      street: '전북 전주시 덕진구 백제대로 567'
-      city: '전북대학교'
-      region: '공과대학 7호관'
-      postcode: '54896'
-      country: '대한민국'
-      country_code: 'KR'
+    
+    # contact_links를 사용해 아이콘과 함께 주소를 직접 추가합니다.
+    contact_links:
+      - icon: map-marker-alt
+        icon_pack: fas
+        name: 전북대학교 공과대학 7호관
+        link: 'https://www.google.com/maps/search/?api=1&query=35.8485,127.1272'
+
     autolink: true
   design:
     columns: '1'
     background:
       color: '#f9f9f9'
 
-# --- The broken 'map' block is replaced with this 'markdown' block ---
+# --- 지도 블록은 그대로 유지합니다 ---
 - block: markdown
   content:
     title: ''
     subtitle: ''
     text: |-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.174384606717!2d127.12462537637175!3d35.8485009726224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357022e3a4128f93%3A0x7c75655a6d71b31d!2z7KCE67aA64yA7ZWZ6rWQIOqzteuNsOq1rCDqsIQ37Zi46rSA!5e0!3m2!1sko!2skr!4v1728950000000!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.16666799822!2d127.1246253152538!3d35.8485009801788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357022e3a296e4c7%3A0x6c8c7c6a5a2a2e4!2z7JeN67KV64yA7ZWZ6rWQIOqzteuCqO2VmeyLiOq1rCDqs63rgqjtlZntmITsgrwxN-ydtA!5e0!3m2!1sko!2skr!4v1665640101123!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   design:
     background:
       color: '#f9f9f9'

@@ -1,7 +1,8 @@
 ---
-title:
+title: "홈"
 date: 2025-10-13
 type: landing
+---
 
 sections:
 - block: slider
@@ -83,3 +84,4 @@ sections:
     columns: '1'
     background:
       color: '#f9f9f9'
+---

@@ -48,12 +48,42 @@ sections:
 - block: contact
   id: contact
   content:
-    title: 연락처
+    title: 📍 위치 및 연락처
     text: |-
-      프로젝트 협업 제안이나 기타 문의 사항이 있으시면 아래 연락처로 편하게 연락 주세요.
-    email: cws1513@jbnu.ac.kr
-    phone: 010-5191-3088
-    autolink: true
+      <div class="container-fluid section-heading-wrapper text-center">
+        <h1 class="section-heading">연락처</h1>
+        <p class="section-subtitle">
+          프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
+        </p>
+      </div>
+
+      <div class="container">
+        <div style="margin-top: 1rem;">
+          <i class="fas fa-envelope pr-2" aria-hidden="true"></i>
+          <a href="mailto:cws1513@jbnu.ac.kr">cws1513@jbnu.ac.kr</a>
+        </div>
+
+        <div style="margin-top: 0.5rem;">
+          <i class="fas fa-phone pr-2" aria-hidden="true"></i>
+          <a href="tel:010-5191-3088">010-5191-3088</a>
+        </div>
+
+        <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
+          <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i>
+          전북대학교 공과대학 7호관
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.18871329381!2d127.12462587515155!3d35.84850382343279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228b48842525%3A0x2a984b9f2a7146a!2z7KCE67aB64yA7ZWc6rWQIOqzteuNsOq1rCDqsIQn7Zi46rSA!5e0!3m2!1sko!2skr!4v1728923171358!5m2!1sko!2skr"
+          width="100%"
+          height="450"
+          style="border:0; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    autolink: false
   design:
     columns: '1'
     background:

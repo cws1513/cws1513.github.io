@@ -48,9 +48,8 @@ sections:
     title: 자기소개
     username: admin
 
-# --- 연락처와 지도를 하나로 합친 최종 블록 ---
 - block: markdown
-  id: contact # 메뉴바와 연결하기 위한 ID
+  id: contact
   content:
     title: 연락처
     subtitle: 프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.

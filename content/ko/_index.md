@@ -53,8 +53,8 @@ sections:
   content:
     title: 연락처
     subtitle: 프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
-    # layouts/partials/contact_map.html 파일을 불러오는 Hugo 공식 명령어입니다.
-    text: '{{< partial "contact_map.html" . >}}'
+    # layouts/shortcodes/contact.html 파일을 불러오는 올바른 쇼트코드입니다.
+    text: '{{< contact >}}'
   design:
     columns: '1'
     background:

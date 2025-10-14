@@ -73,15 +73,14 @@ sections:
         <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> 전북대학교 공과대학 7호관
       </div>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.18871329381!2d127.12462587515155!3d35.84850382343279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228b48842525%3A0x2a984b9f2a7146a!2z7KCE67aB64yA7ZWc6rWQIOqzteuNsOq1rCDqsIQn7Zi46rSA!5e0!3m2!1sko!2skr!4v1728923171358!5m2!1sko!2skr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1213201548776!2d127.13446309999999!3d35.8460286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgO2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760467755885!5m2!1sko!2skr"
         width="100%"
         height="450"
-        style="border:0; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"
+        style="border:0; border-radius:12px;      box-shadow:0 4px 12px rgba(0,0,0,0.15);"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+        </iframe>  </div>
 
 - block: collection
   id: projects

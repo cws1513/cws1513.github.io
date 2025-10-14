@@ -1,6 +1,7 @@
 ---
 title: 'Project 1: 2D Naruto Fan Game with Java and Swing'
 date: 2025-10-13
+draft: false 
 summary: 'A 2D side-scrolling Naruto fan game project based on Java Swing, featuring character switching, items, boss battles, and more.'
 tags: ["Java", "Game Development", "Project"]
 

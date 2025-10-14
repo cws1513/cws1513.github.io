@@ -11,27 +11,21 @@ sections:
       content: '전북대학교 IT정보공학과에서의 성장 기록'
       align: center
       background:
-        image:
-          filename: school.jpg
-          filters: { brightness: 0.7 }
+        image: {filename: school.jpg, filters: {brightness: 0.7}}
         position: center
         color: '#FFFFFF'
     - title: 개발자가 되어가는 길
       content: '새로운 기술을 배우고 적용하며 꿈을 향해 나아갑니다.'
       align: center
       background:
-        image:
-          filename: coding.jpg
-          filters: { brightness: 0.7 }
+        image: {filename: coding.jpg, filters: {brightness: 0.7}}
         position: center
         color: '#FFFFFF'
     - title: 스트레스 해소를 위한 취미생활
       content: '코딩 외의 다양한 활동으로 삶의 균형을 맞춥니다.'
       align: center
       background:
-        image:
-          filename: hobby.jpg
-          filters: { brightness: 0.7 }
+        image: {filename: hobby.jpg, filters: {brightness: 0.7}}
         position: center
         color: '#FFFFFF'
   design:
@@ -45,19 +39,45 @@ sections:
     title: 자기소개
     username: admin
 
+# --- 이 연락처 블록을 수정했습니다 ---
 - block: contact
   id: contact
   content:
     title: 연락처
     text: |-
-      프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 아래 연락처로 편하게 연락 주세요.
+      프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
     email: cws1513@jbnu.ac.kr
     phone: 010-5191-3088
+    # 주소를 추가하면 자동으로 지도 아이콘(fas)이 생깁니다.
+    address:
+      street: '전북 전주시 덕진구 백제대로 567'
+      city: '전북대학교'
+      region: '공과대학 7호관'
+      postcode: '54896'
+      country: '대한민국'
+      country_code: 'KR'
     autolink: true
   design:
     columns: '1'
     background:
       color: '#f9f9f9'
+
+# --- 이 지도 블록을 연락처와 이어지도록 수정했습니다 ---
+- block: map
+  content:
+    provider: google
+    api_key: ''
+    # 전북대학교 공과대학 7호관의 정확한 위도와 경도
+    latitude: '35.8485'
+    longitude: '127.1272'
+    zoom: 17
+  design:
+    # 연락처 섹션과 자연스럽게 이어지도록 배경색을 통일합니다.
+    background:
+      color: '#f9f9f9'
+    # 위쪽 여백을 없애 연락처 블록과 딱 붙게 만듭니다.
+    spacing:
+      padding: ["0", "0", "20px", "0"]
 
 - block: collection
   id: projects
@@ -65,7 +85,6 @@ sections:
     title: 프로젝트
     text: ''
     count: 3
-    # 오직 'post' 폴더 안에 있는 것만 가져오도록 필터를 강화합니다.
     filters:
       folders:
         - post

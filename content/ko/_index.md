@@ -39,7 +39,6 @@ sections:
     title: 자기소개
     username: admin
 
-# --- 이 연락처 블록을 수정했습니다 ---
 - block: contact
   id: contact
   content:
@@ -48,7 +47,6 @@ sections:
       프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
     email: cws1513@jbnu.ac.kr
     phone: 010-5191-3088
-    # 주소를 추가하면 자동으로 지도 아이콘(fas)이 생깁니다.
     address:
       street: '전북 전주시 덕진구 백제대로 567'
       city: '전북대학교'
@@ -62,20 +60,16 @@ sections:
     background:
       color: '#f9f9f9'
 
-# --- 이 지도 블록을 연락처와 이어지도록 수정했습니다 ---
-- block: map
+# --- The broken 'map' block is replaced with this 'markdown' block ---
+- block: markdown
   content:
-    provider: google
-    api_key: ''
-    # 전북대학교 공과대학 7호관의 정확한 위도와 경도
-    latitude: '35.8485'
-    longitude: '127.1272'
-    zoom: 17
+    title: ''
+    subtitle: ''
+    text: |-
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.174384606717!2d127.12462537637175!3d35.8485009726224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357022e3a4128f93%3A0x7c75655a6d71b31d!2z7KCE67aA64yA7ZWZ6rWQIOqzteuNsOq1rCDqsIQ37Zi46rSA!5e0!3m2!1sko!2skr!4v1728950000000!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   design:
-    # 연락처 섹션과 자연스럽게 이어지도록 배경색을 통일합니다.
     background:
       color: '#f9f9f9'
-    # 위쪽 여백을 없애 연락처 블록과 딱 붙게 만듭니다.
     spacing:
       padding: ["0", "0", "20px", "0"]
 

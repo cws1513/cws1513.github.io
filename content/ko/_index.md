@@ -11,21 +11,30 @@ sections:
         content: '전북대학교 IT정보공학과에서의 성장 기록'
         align: center
         background:
-          image: {filename: school.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: school.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
       - title: 개발자가 되어가는 길
         content: '새로운 기술을 배우고 적용하며 꿈을 향해 나아갑니다.'
         align: center
         background:
-          image: {filename: coding.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: coding.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
       - title: 스트레스 해소를 위한 취미생활
         content: '코딩 외의 다양한 활동으로 삶의 균형을 맞춥니다.'
         align: center
         background:
-          image: {filename: hobby.jpg, filters: {brightness: 0.7}}
+          image:
+            filename: hobby.jpg
+            filters:
+              brightness: 0.7
           position: center
           color: '#FFFFFF'
   design:
@@ -44,7 +53,8 @@ sections:
   content:
     title: 연락처
     subtitle: 프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
-    text: '{{< readFile "data/contact.html" >}}'
+    # layouts/partials/contact_map.html 파일을 불러오는 Hugo 공식 명령어입니다.
+    text: '{{< partial "contact_map.html" . >}}'
   design:
     columns: '1'
     background:

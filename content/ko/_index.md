@@ -4,6 +4,16 @@ date: 2025-10-13
 type: landing
 
 sections:
+# --- 바로 여기에 진단용 코드를 붙여넣으세요 ---
+- block: markdown
+  id: test-section
+  content:
+    title: 마크다운 블록 테스트
+    subtitle: 이 글이 보이시나요?
+    text: |-
+      안녕하세요. 이 텍스트가 정상적으로 보인다면, 마크다운 블록 자체에는 문제가 없는 것입니다.
+      
+sections:
 - block: slider
   content:
     slides:

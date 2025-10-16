@@ -48,7 +48,7 @@ sections:
 - block: contact_custom
   id: contact
   content:
-    title: 📍 Location & Contact
+    title: Location & Contact
   design:
     background:
       color: "#f9f9f9"

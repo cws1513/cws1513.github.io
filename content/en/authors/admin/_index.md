@@ -39,11 +39,9 @@ social:
     icon_pack: fab
     link: 'https://www.youtube.com/@Allright24_'
 
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/uploads/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/cv.pdf
+  - icon: cv
+    icon_pack: ai
+    link: uploads/resume.pdf
 
 
 email: ''

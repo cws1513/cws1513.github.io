@@ -48,10 +48,9 @@ social:
     icon_pack: fab
     link: 'https://www.youtube.com/@Allright24_'
 
-# 이력서 PDF 파일 다운로드 링크
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/cv.pdf
+  - icon: cv
+    icon_pack: ai
+    link: uploads/resume.pdf
 
 
 email: ''

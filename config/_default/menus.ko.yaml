@@ -10,12 +10,15 @@ main:
   - name: 연락처
     url: '#contact'
     weight: 30
-    
-  
   - name: 프로젝트
     identifier: projects 
     weight: 40
-     
+  - name: 블로그  
+    url: '/blog/'
+    weight: 50
+  - name: 여행   
+    url: '/travel/'
+    weight: 60
     
   - name: 포트폴리오 웹사이트 구축
     parent: projects

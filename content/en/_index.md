@@ -45,18 +45,6 @@ sections:
     title: About Me
     username: admin
 
-- block: card_view_1
-  content:
-    title: "My First Custom Card"
-    text: "This is the first custom view with the image on top."
-    image: "custom_card_1.jpg" 
-
-- block: card_view_2
-  content:
-    title: "My Second Custom Card"
-    text: "This is the second custom view, a horizontal card with the image on the left."
-    image: "custom_card_2.jpg"
-
 - block: resume_button_en
 
 - block: contact_custom_en

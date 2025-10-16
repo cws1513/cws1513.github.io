@@ -2,6 +2,7 @@
 title: 여행
 image:
   filename: travel.jpg
+  preview_only: true 
 ---
 
 {{< figure

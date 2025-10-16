@@ -2,6 +2,7 @@
 title: Blog
 image:
   filename: blog.jpg
+  preview_only: true 
 ---
 
 {{< figure

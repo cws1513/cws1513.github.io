@@ -2,6 +2,7 @@
 title: Travel
 image:
   filename: travel.jpg
+  preview_only: true 
 ---
 
 {{< figure

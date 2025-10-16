@@ -7,8 +7,9 @@
 }
 
 .btn-primary {
+  transition: opacity 0.2s ease-in-out;
+  
   &:hover {
-    background-color: darken($primary, 10%);
-    border-color: darken($primary, 10%);
+    opacity: 0.8;
   }
 }

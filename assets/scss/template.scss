@@ -30,14 +30,13 @@
   }
 }
 #navbar-main {
-  background-color: rgba($primary, 0.3) !important;
+  background-color: rgba($primary, 0.6) !important;
   transition: background-color 0.3s ease-in-out;
 }
 
 #navbar-main:hover {
   background-color: $primary !important;
 }
-
 #navbar-main .navbar-brand,
 #navbar-main .navbar-nav .nav-link,
 #navbar-main .nav-buttons .nav-link {

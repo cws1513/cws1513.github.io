@@ -71,15 +71,7 @@ sections:
       <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
         <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> Engineering Building 7, Jeonbuk National University
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.18871329381!2d127.12462587515155!3d35.84850382343279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228b48842525%3A0x2a984b9f2a7146a!2z7KCE67aB64yA7ZWc6rWQIOqzteuNsOq1rCDqsIQn7Zi46rSA!5e0!3m2!1sko!2skr!4v1728923171358!5m2!1sko!2skr"
-        width="100%"
-        height="450"
-        style="border:0; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.393161690461!2d127.1246255763569!3d35.84850097262175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228a73b2287b%3A0x3b8b1a8f33e3871!2z7KCE67aA64yA7ZWZ6rWQIOqzteuNsOq1rCDqsIQgN-2ajOq0gA!5e0!3m2!1sko!2skr!4v1729054133744!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 - block: collection

@@ -1,0 +1,15 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card shadow-sm border-0">
+        {{ with .page.Params.image }}
+        <img src="{{ (resources.Get .).RelPermalink }}" class="card-img-top" alt="Card image">
+        {{ end }}
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ .page.Params.title | markdownify }}</h5>
+          <p class="card-text">{{ .page.Params.text | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -45,6 +45,18 @@ sections:
     title: 자기소개
     username: admin
 
+- block: card_view_1
+  content:
+    title: "첫 번째 커스텀 카드"
+    text: "이것은 이미지가 위에 있는 첫 번째 커스텀 뷰(HTML)입니다."
+    image: "custom_card_1.jpg" 
+
+- block: card_view_2
+  content:
+    title: "두 번째 커스텀 카드"
+    text: "이것은 이미지가 왼쪽에 있는 두 번째 커스텀 뷰(HTML)입니다."
+    image: "custom_card_2.jpg"  
+
 - block: resume_button_ko
 
 - block: contact_custom_ko

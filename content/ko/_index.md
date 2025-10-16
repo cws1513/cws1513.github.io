@@ -45,6 +45,18 @@ sections:
     title: 자기소개
     username: admin
 
+- block: markdown
+  id: resume
+  content:
+    title: ''
+    subtitle: ''
+    text: |-
+      <div class="text-center">
+        <a class="btn btn-primary" href="/uploads/resume.pdf" target="_blank" rel="noopener">
+          이력서 다운로드
+        </a>
+      </div>
+      
 - block: contact_custom_ko
   id: contact
   content:

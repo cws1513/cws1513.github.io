@@ -37,7 +37,7 @@ sections:
   design:
     is_fullscreen: true
     loop: true
-    interval: 5000
+    interval: 3000
 
 - block: about.biography
   id: about

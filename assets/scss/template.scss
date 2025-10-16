@@ -29,9 +29,8 @@
     }
   }
 }
-
 #navbar-main {
-  background-color: transparent !important;
+  background-color: rgba($primary, 0.3) !important;
   transition: background-color 0.3s ease-in-out;
 }
 

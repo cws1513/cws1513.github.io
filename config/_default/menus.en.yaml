@@ -2,14 +2,30 @@
 
 main:
   - name: Home
-    url: '#' # Prevents build errors and links to the top of the page.
+    url: '/'
     weight: 10
   - name: About
-    url: '#about' # Links to the 'About' section.
+    url: '#about'
     weight: 20
   - name: Contact
-    url: '#contact' # Links to the 'Contact' section.
+    url: '#contact'
     weight: 30
+
+
   - name: Projects
-    url: '#projects' # Links to the 'Projects' section.
+    identifier: projects 
     weight: 40
+    
+ 
+  - name: Portfolio Website Construction
+    parent: projects
+    url: '/post/portfolio/'
+    weight: 1
+  - name: Oracle Database Design
+    parent: projects
+    url: '/post/database/' 
+    weight: 2
+  - name: Java Naruto Fan Game
+    parent: projects
+    url: '/post/naruto-game/' 
+    weight: 3

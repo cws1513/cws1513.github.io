@@ -45,18 +45,18 @@ sections:
     title: About Me
     username: admin
 
-- block: contact_custom
+- block: contact_custom_en
   id: contact
   content:
-    title: Location & Contact
+    title: 📍 위치 및 연락처
   design:
     background:
       color: "#f9f9f9"
   body: |-
     <div class="container-fluid section-heading-wrapper text-center">
-      <h1 class="section-heading">Contact</h1>
+      <h1 class="section-heading">연락처</h1>
       <p class="section-subtitle">
-        Feel free to contact me for project collaboration proposals or any questions.
+        프로젝트 협업 제안이나 기타 궁금한 점이 있으시면 편하게 연락 주세요.
       </p>
     </div>
     <div class="container">
@@ -69,9 +69,9 @@ sections:
         <a href="tel:010-5191-3088">010-5191-3088</a>
       </div>
       <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
-        <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> Engineering Building 7, Jeonbuk National University
+        <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> 전주시
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1213201548776!2d127.13446309999999!3d35.8460286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgO2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760590508659!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="http://googleusercontent.com/maps/google.com/15" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 - block: collection

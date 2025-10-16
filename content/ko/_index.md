@@ -72,15 +72,7 @@ sections:
       <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
         <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> 전북대학교 공과대학 7호관
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1213201548776!2d127.13446309999999!3d35.8460286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgO2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760467755885!5m2!1sko!2skr"
-        width="100%"
-        height="450"
-        style="border:0; border-radius:12px;      box-shadow:0 4px 12px rgba(0,0,0,0.15);"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>  </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.393161690461!2d127.1246255763569!3d35.84850097262175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3570228a73b2287b%3A0x3b8b1a8f33e3871!2z7KCE67aA64yA7ZWZ6rWQIOqzteuNsOq1rCDqsIQgN-2ajOq0gA!5e0!3m2!1sko!2skr!4v1729054133744!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
 
 - block: collection
   id: projects

@@ -45,7 +45,7 @@ sections:
     title: 자기소개
     username: admin
 
-- block: resume_button
+- block: resume_button_ko
 
 - block: contact_custom_ko
   id: contact

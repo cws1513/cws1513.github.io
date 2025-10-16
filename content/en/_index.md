@@ -45,7 +45,7 @@ sections:
     title: About Me
     username: admin
 
-- block: resume_button
+- block: resume_button_en
 
 - block: contact_custom_en
   id: contact

@@ -1,3 +1,9 @@
+---
+title: Travel
+image:
+  filename: travel.jpg
+---
+
 {{< figure
   src="travel.jpg"
   alt="Travel Featured Image"

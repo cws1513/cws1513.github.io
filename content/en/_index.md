@@ -45,21 +45,7 @@ sections:
     title: About Me
     username: admin
 
-- block: contact_custom
-  id: resume
-  content:
-    title: ''
-  design:
-    background:
-      color: 'white' 
-  body: |-
-    <div class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
-      <div class="text-center">
-        <a class="btn btn-primary btn-lg" href="/uploads/resume.pdf" target="_blank" rel="noopener">
-          Download Resume
-        </a>
-      </div>
-    </div>
+- block: resume_button
 
 - block: contact_custom_en
   id: contact

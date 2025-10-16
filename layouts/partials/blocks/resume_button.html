@@ -1,0 +1,13 @@
+<div class="container" style="padding: 40px 0; background-color: white;">
+  <div class="text-center">
+    {{ if eq .Lang "ko-KR" }}
+      <a class="btn btn-primary btn-lg" href="/uploads/resume.pdf" target="_blank" rel="noopener">
+        이력서 다운로드
+      </a>
+    {{ else }}
+      <a class="btn btn-primary btn-lg" href="/uploads/resume.pdf" target="_blank" rel="noopener">
+        Download Resume
+      </a>
+    {{ end }}
+  </div>
+</div>

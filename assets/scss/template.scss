@@ -13,3 +13,27 @@
     opacity: 0.8;
   }
 }
+// --- 쇼트코드를 위한 안전한 이미지 스타일 ---
+.custom-figure {
+  // 이미지와 캡션을 중앙 정렬합니다.
+  text-align: center;
+
+  // 이미지 자체에 효과 적용
+  img {
+    border-radius: 15px; // 둥근 테두리
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); // 그림자
+    max-width: 70%; // 최대 너비 제한
+    margin-bottom: 10px; // 이미지와 캡션 사이 간격
+  }
+
+  // 캡션(figcaption)에 효과 적용
+  figcaption {
+    font-size: 0.9em;
+    color: #6c757d;
+
+    // 아이콘 오른쪽 간격
+    .fas {
+      margin-right: 8px;
+    }
+  }
+}

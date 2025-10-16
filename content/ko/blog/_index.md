@@ -1,9 +1,3 @@
----
-title: 블로그
-image:
-  filename: blog.jpg
----
-
 {{< figure
   src="blog.jpg"
   alt="블로그 대표 이미지"

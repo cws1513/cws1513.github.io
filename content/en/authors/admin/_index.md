@@ -38,9 +38,8 @@ social:
   - icon: youtube
     icon_pack: fab
     link: 'https://www.youtube.com/@Allright24_'
-
-  - icon: cv
-    icon_pack: ai
+  - icon: file-alt
+    icon_pack: fas
     link: uploads/resume.pdf
 
 

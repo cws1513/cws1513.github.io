@@ -1,8 +1,15 @@
-<div style="border: 4px solid red; padding: 20px; margin: 40px 0; background-color: yellow;">
-  <h1 style="color: black; font-size: 2rem; text-align: center;">
-    진단 테스트: 이 글이 보이시나요?
-  </h1>
-  <p style="color: black; text-align: center;">
-    만약 이 노란색 상자와 빨간 테두리가 보인다면, HTML 파일 자체는 정상적으로 작동하는 것입니다.
-  </p>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card shadow-sm border-0">
+        {{ with .page.Params.content.image }}
+        <img src="{{ (resources.Get .).RelPermalink }}" class="card-img-top" alt="Card image">
+        {{ end }}
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ .page.Params.content.title | markdownify }}</h5>
+          <p class="card-text">{{ .page.Params.content.text | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

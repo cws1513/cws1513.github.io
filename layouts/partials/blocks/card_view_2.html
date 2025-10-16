@@ -4,14 +4,14 @@
       <div class="card shadow-sm border-0">
         <div class="row g-0">
           <div class="col-md-5">
-            {{ with .page.Params.content.image }}
+            {{ with .content.image }}
             <img src="{{ (resources.Get .).RelPermalink }}" class="img-fluid rounded-start h-100 w-100" style="object-fit: cover;" alt="Card image">
             {{ end }}
           </div>
           <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">{{ .page.Params.content.title | markdownify }}</h5>
-              <p class="card-text">{{ .page.Params.content.text | markdownify }}</p>
+              <h5 class="card-title">{{ .content.title | markdownify }}</h5>
+              <p class="card-text">{{ .content.text | markdownify }}</p>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ main:
   - name: 포트폴리오 웹사이트 구축
     parent: projects
     url: '/post/portfolio/' 
-    weight: 1
+    weight: 3
   - name: Oracle 데이터베이스 설계
     parent: projects
     url: '/post/database/'
@@ -28,4 +28,4 @@ main:
   - name: Java 나루토 팬 게임
     parent: projects
     url: '/post/naruto-game/'
-    weight: 3
+    weight: 1

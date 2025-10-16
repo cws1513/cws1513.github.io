@@ -20,7 +20,7 @@ main:
   - name: Portfolio Website Construction
     parent: projects
     url: '/post/portfolio/'
-    weight: 1
+    weight: 3
   - name: Oracle Database Design
     parent: projects
     url: '/post/database/' 
@@ -28,4 +28,4 @@ main:
   - name: Java Naruto Fan Game
     parent: projects
     url: '/post/naruto-game/' 
-    weight: 3
+    weight: 1

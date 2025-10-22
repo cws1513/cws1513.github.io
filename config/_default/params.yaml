@@ -1,23 +1,20 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
 appearance:
   theme_day: ocean
   theme_night: dark
   font: native
   font_size: L
 
-# SEO
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: '최우성의 개인 기술 블로그 및 포트폴리오 웹사이트입니다.'
-    twitter: 'GetResearchDev'
+    title: '최우성의 포트폴리오 | 프론T엔드 개발자'
+    description: '전북대학교 IT정보공학과 최우성의 개인 포트폴리오 웹사이트입니다. JavaScript, React, 웹 개발 프로젝트들을 소개합니다.'
+    keywords: '최우성, 포트폴리오, 프론트엔드, 개발자, 전북대학교, IT정보공학과, React, JavaScript'
+    twitter: ''
+  share:
+    title: '최우성의 포트폴리오'
+    description: '전북대학교 IT정보공학과 최우성의 포트폴리오입니다.'
+    image: 'sharing.jpg'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -27,7 +24,6 @@ marketing:
     google: ''
     baidu: ''
 
-# Site header
 header:
   navbar:
     enable: true
@@ -38,7 +34,6 @@ header:
     show_search: true
     highlight_active_link: true
 
-# Site footer
 footer:
   copyright:
     notice: '© {year} Choi Woosung. All Rights Reserved.'
@@ -48,13 +43,11 @@ footer:
       share_alike: true
       allow_commercial: false
 
-# Localization
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
   address_format: en-us
 
-# Site features
 features:
   syntax_highlighter:
     enable: false
@@ -96,7 +89,7 @@ features:
     api_key: ''
     zoom: 15
 
-# Extensions
+
 extensions:
   decap_cms:
     branch: main
@@ -104,7 +97,7 @@ extensions:
   academicons:
     enable: true
 
-# Citation style
+
 publications:
   date_format: January 2006
   citation_style: apa

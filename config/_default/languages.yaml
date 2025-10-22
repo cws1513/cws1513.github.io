@@ -1,17 +1,12 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
 
 ko:
   languageCode: ko-KR
-  title: 최우성의 포트폴리오
-  # Uncomment for multi-lingual sites, and move Korean content into `ko` sub-folder.
+  title: 전북대 최우성 포트폴리오
   contentDir: content/ko
   weight: 1
 
 en:
   languageCode: en-US
-  title: Woosung Choi's Portfolio
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+  title: Woosung Choi Portfolio
   contentDir: content/en
   weight: 2

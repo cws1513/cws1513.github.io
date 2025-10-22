@@ -76,43 +76,42 @@ sections:
       <iframe src="google.com/maps/embed?pb=!1m18!1m12!1m3!1d103332.9511085018!2d127.0549449439811!3d35.82422345638018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023435b32616b%3A0x1b4c02f47c21c78!2z7KCE656R67aB64-EIOyjvOyjvA!5e0!3m2!1sko!2skr!4v1729065000000!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-# 33번 항목 (1/3 세트), 4번 항목 (1/3 뷰)
-- block: collection
-  id: set-1
-  content:
-    title: '프로젝트'
-    text: '첫 번째 뷰(custom_view_a)로 3개의 항목을 표시합니다.'
-    count: 3  # <--- 3개
-    filters:
-      folders:
-        - post
-  design:
-    view: custom_view_a  # <--- 1단계에서 만든 뷰 이름 (다른 뷰 1)
 
-# 33번 항목 (2/3 세트), 4번 항목 (2/3 뷰)
 - block: collection
-  id: set-2
+  id: 취미
   content:
-    title: '프로젝트 세트 2 (커스텀 뷰 B)'
-    text: '두 번째 뷰(custom_view_b)로 3개의 항목을 표시합니다.'
-    count: 3  # <--- 3개
+    title: '나의 취미 (Hobby)'
+    text: ''
+    count: 3  
     filters:
       folders:
-        - post
+        - hobby 
   design:
-    view: custom_view_b  # <--- 1단계에서 만든 뷰 이름 (다른 뷰 2)
+    view: custom_view_a  
 
-# 33번 항목 (3/3 세트), 4번 항목 (3/3 뷰)
 - block: collection
-  id: set-3
+  id: 웹사이트
   content:
-    title: '프로젝트 세트 3 (기본 뷰)'
-    text: '세 번째 뷰(내장된 card 뷰)로 3개의 항목을 표시합니다.'
-    count: 3  # <--- 3개
+    title: '주요 웹사이트 (Websites)'
+    text: ''
+    count: 3  
     filters:
       folders:
-        - post
+        - websites 
   design:
-    view: card  # <--- 테마에 내장된 기본 뷰 (다른 뷰 3)
-    columns: '2' 
----
+    view: custom_view_b 
+
+- block: collection
+  id: 스터디
+  content:
+    title: '나의 스터디 (Study)'
+    text: ''
+    count: 3  
+    filters:
+      folders:
+        - study  
+  design:
+    view: card  
+    columns: '3' 
+
+--- 

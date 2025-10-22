@@ -1,5 +1,10 @@
-{{/* 커스텀 뷰 B (배경색 + 날짜) */}}
-<div class_name="card" style="background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
-  <h4 class="card-title">[커스텀 뷰 B] <a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+{{/* 커스텀 뷰 B (외부 링크 기능 추가됨) */}}
+{{ $link := .RelPermalink }}
+{{ if .Params.external_link }}
+  {{ $link = .Params.external_link }}
+{{ end }}
+
+<div class="card" style="background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
+  <h4 class="card-title">[커스텀 뷰 B] <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a></h4>
   <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
 </div>

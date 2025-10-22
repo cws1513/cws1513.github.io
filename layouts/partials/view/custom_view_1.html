@@ -1,6 +1,6 @@
+{{/* 커스텀 뷰 1 (Card 스타일) - ASSETS 버전 */}}
 {{- $p := . -}}
 {{- if .page -}}{{- $p = .page -}}{{- end -}}
-
 {{- $link := $p.RelPermalink -}}
 {{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
 
@@ -13,17 +13,14 @@
       {{- $imgURL = $img.RelPermalink -}}
     {{- end -}}
   {{- end -}}
-
   {{- if $imgURL -}}
     <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>
       <img src="{{ $imgURL }}" class="card-img-top" alt="{{ $p.Title }}" style="width:100%; height:200px; object-fit:cover;">
     </a>
   {{- end -}}
-
   <div class="card-body">
     <h4 class="card-title" style="font-size:1.25rem;">
       <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $p.Title }}</a>
     </h4>
   </div>
-</div> 
- 
+</div>

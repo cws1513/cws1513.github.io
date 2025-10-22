@@ -1,6 +1,6 @@
+{{/* 커스텀 뷰 2 (Compact 스타일) - ASSETS 버전 */}}
 {{- $p := . -}}
 {{- if .page -}}{{- $p = .page -}}{{- end -}}
-
 {{- $link := $p.RelPermalink -}}
 {{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
 
@@ -13,16 +13,14 @@
       {{- $imgURL = $img.RelPermalink -}}
     {{- end -}}
   {{- end -}}
-
   {{- if $imgURL -}}
     <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }} class="mr-3">
       <img src="{{ $imgURL }}" alt="{{ $p.Title }}" style="width:120px; height:120px; object-fit:cover; border-radius:5px;">
     </a>
   {{- end -}}
-
   <div class="media-body" style="align-self:center;">
     <h3 class="article-title mb-0 mt-0">
       <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $p.Title }}</a>
     </h3>
   </div>
-</div> 
+</div>

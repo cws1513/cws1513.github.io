@@ -108,5 +108,5 @@ sections:
       folders:
         - websites 
   design:
-    view: custom_view_c
+    view: card
 ---

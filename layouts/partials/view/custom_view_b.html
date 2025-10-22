@@ -1,10 +1,10 @@
-{{/* 커스텀 뷰 B (외부 링크 기능 추가됨) */}}
+{{/* 커스텀 뷰 B (List 스타일) */}}
 {{ $link := .RelPermalink }}
-{{ if .Params.external_link }}
-  {{ $link = .Params.external_link }}
-{{ end }}
+{{ if .Params.external_link }}{{ $link = .Params.external_link }}{{ end }}
 
-<div class="card" style="background-color: #f5f5f5; padding: 15px; margin-bottom: 20px;">
-  <h4 class="card-title">[커스텀 뷰 B] <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a></h4>
-  <time class="article-date">{{ .Date.Format "2006-01-02" }}</time>
+<div class="stream-item" style="padding: 0.75rem 1.25rem; border-bottom: 1px solid #eee;">
+  <h3 class="article-title mb-0 mt-0" style="font-size: 1.2rem;">
+    <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+  </h3>
+  <time class="article-date" style="font-size: 0.9rem;">{{ .Date.Format "2006-01-02" }}</time>
 </div>

@@ -1,14 +1,12 @@
-{{/* 커스텀 뷰 A (외부 링크 기능 추가됨) */}}
+{{/* 커스텀 뷰 A (Compact 스타일) */}}
 {{ $link := .RelPermalink }}
-{{ if .Params.external_link }}
-  {{ $link = .Params.external_link }}
-{{ end }}
+{{ if .Params.external_link }}{{ $link = .Params.external_link }}{{ end }}
 
-<div class="card" style="border: 2px solid green; margin-bottom: 20px;">
-  <div class="card-body">
-    <h4 class="card-title">[커스텀 뷰 A] <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a></h4>
-    <div class="card-text">
-      {{ .Summary | plainify | safeHTML }}
-    </div>
+<div class="media stream-item" style="padding: 1.25rem; border: 1px solid #eee; margin-bottom: 1rem; border-radius: 5px;">
+  <div class="media-body">
+    <h3 class="article-title mb-0 mt-0">
+      <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+    </h3>
+    <div class="article-style">{{ .Summary | plainify | safeHTML }}</div>
   </div>
 </div>

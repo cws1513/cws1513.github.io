@@ -1,25 +1,26 @@
-{{/* 커스텀 뷰 B (Compact 스타일) - ASSETS 버전 */}}
-{{ $link := .RelPermalink }}
-{{ if .Params.external_link }}{{ $link = .Params.external_link }}{{ end }}
+{{- $p := . -}}
+{{- $link := $p.RelPermalink -}}
+{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
 
-<div class="media stream-item" style="padding: 1.25rem; border: 1px solid #eee; margin-bottom: 1rem; border-radius: 5px;">
-  
-  {{/* --- ASSETS 이미지 처리 시작 --- */}}
-  {{ $imageResource := "" }}
-  {{ with .Params.image_path }}
-    {{ $imageResource = resources.Get . }}
-  {{ end }}
-  {{ if $imageResource }}
-    {{ $image := $imageResource.Fill "120x120" }} {{/* Compact 뷰에 맞게 리사이즈 */}}
-    <a href="{{ $link }}" {{ if $.Params.external_link }}target="_blank" rel="noopener"{{ end }} class="mr-3">
-      <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" style="width: 120px; height: 120px; object-fit: cover; border-radius: 5px;">
+<div class="media stream-item" style="padding:1.25rem; border:1px solid #eee; margin-bottom:1rem; border-radius:5px;">
+  {{- $imgURL := "" -}}
+  {{- with $p.Params.image_path -}}
+    {{- $res := resources.Get . -}}
+    {{- if $res -}}
+      {{- $img := $res.Fill "120x120" -}}
+      {{- $imgURL = $img.RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $imgURL -}}
+    <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }} class="mr-3">
+      <img src="{{ $imgURL }}" alt="{{ $p.Title }}" style="width:120px; height:120px; object-fit:cover; border-radius:5px;">
     </a>
-  {{ end }}
-  {{/* --- ASSETS 이미지 처리 끝 --- */}}
+  {{- end -}}
 
-  <div class="media-body" style="align-self: center;">
+  <div class="media-body" style="align-self:center;">
     <h3 class="article-title mb-0 mt-0">
-      <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+      <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $p.Title }}</a>
     </h3>
   </div>
 </div>

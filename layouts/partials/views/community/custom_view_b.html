@@ -1,0 +1,12 @@
+{{- $p := . -}}
+{{- $link := $p.RelPermalink -}}
+{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+
+<div class="list-group-item mb-2">
+  <h5 class="mb-1">
+    <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank"{{ end }}>
+      {{ $p.Title }}
+    </a>
+  </h5>
+  <p class="mb-0 text-muted">{{ $p.Summary }}</p>
+</div>

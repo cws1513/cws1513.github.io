@@ -1,0 +1,9 @@
+{{- $p := . -}}
+{{- $link := $p.RelPermalink -}}
+{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+
+<div class="mb-2 p-2 border-start border-primary border-3 bg-light">
+  <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank"{{ end }}>
+    <strong>{{ $p.Title }}</strong>
+  </a>
+</div>

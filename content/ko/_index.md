@@ -78,36 +78,30 @@ sections:
 
 
 - block: collection
-  id: 취미
   content:
     title: '나의 취미 (Hobby)'
     count: 3
     filters:
-      folders:
-        - hobby
+      folders: [hobby]
   design:
     view: custom_view_a
-    columns: '3' 
+    columns: '3'
 
 - block: collection
-  id: 스터디
   content:
     title: '나의 스터디 (Study)'
     count: 3
     filters:
-      folders:
-        - study
+      folders: [study]
   design:
     view: custom_view_b
 
 - block: collection
-  id: 웹사이트
   content:
     title: '주요 웹사이트 (Websites)'
     count: 3
     filters:
-      folders:
-        - websites
+      folders: [websites]
   design:
     view: custom_view_c
 ---

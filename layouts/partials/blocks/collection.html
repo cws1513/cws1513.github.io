@@ -1,15 +1,18 @@
 {{- $view := or .Design.view "custom_view_a" -}}
 {{- $tpl  := printf "views/%s.html" $view -}}
 
-{{- $pages := slice -}}
-{{- with .Content.filters.folders -}}
-  {{- range . -}}
-    {{- $pages = $pages | append (where site.RegularPages "Section" .) -}}
-  {{- end -}}
-{{- else -}}
-  {{- $pages = site.RegularPages -}}
+{{- $folders := .Content.filters.folders | default (slice) -}}
+{{- $all := where site.RegularPages "Draft" "!=" true -}}
+
+{{- $pages := $all -}}
+{{- if gt (len $folders) 0 -}}
+  {{- $pages = where $all "Section" "in" $folders -}}
 {{- end -}}
 
-{{- range first (or .Content.count 9) $pages -}}
+{{- $pages = sort $pages "Date" "desc" -}}
+{{- $n := or .Content.count 9 -}}
+{{- $pages = first $n $pages -}}
+
+{{- range $pages -}}
   {{ partial $tpl (dict "page" .) }}
 {{- end -}}

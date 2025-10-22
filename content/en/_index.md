@@ -77,15 +77,36 @@ sections:
     </div>
 
 - block: collection
-  id: projects
+  id: hobbies
   content:
-    title: Projects
-    text: ''
+    title: 'My Hobbies'
     count: 3
     filters:
       folders:
-        - post
+        - hobby  
   design:
-    view: compact
-    columns: '2'
+    view: custom_view_a  
+    columns: '3' 
+
+- block: collection
+  id: studies
+  content:
+    title: 'My Studies'
+    count: 3
+    filters:
+      folders:
+        - study  
+  design:
+    view: custom_view_b 
+
+- block: collection
+  id: websites
+  content:
+    title: 'Favorite Websites'
+    count: 3
+    filters:
+      folders:
+        - websites 
+  design:
+    view: custom_view_c  
 ---

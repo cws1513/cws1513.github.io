@@ -1,10 +1,16 @@
-{{/* 커스텀 뷰 B (List 스타일) */}}
+{{/* 커스텀 뷰 B (Compact 스타일) */}}
 {{ $link := .RelPermalink }}
 {{ if .Params.external_link }}{{ $link = .Params.external_link }}{{ end }}
 
-<div class="stream-item" style="padding: 0.75rem 1.25rem; border-bottom: 1px solid #eee;">
-  <h3 class="article-title mb-0 mt-0" style="font-size: 1.2rem;">
-    <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
-  </h3>
-  <time class="article-date" style="font-size: 0.9rem;">{{ .Date.Format "2006-01-02" }}</time>
+<div class="media stream-item" style="padding: 1.25rem; border: 1px solid #eee; margin-bottom: 1rem; border-radius: 5px;">
+  {{ with .Params.image_path }}
+    <a href="{{ $link }}" {{ if $.Params.external_link }}target="_blank" rel="noopener"{{ end }} class="mr-3">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" style="width: 120px; height: 120px; object-fit: cover; border-radius: 5px;">
+    </a>
+  {{ end }}
+  <div class="media-body" style="align-self: center;">
+    <h3 class="article-title mb-0 mt-0">
+      <a href="{{ $link }}" {{ if .Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ .Title }}</a>
+    </h3>
+  </div>
 </div>

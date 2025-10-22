@@ -1,4 +1,6 @@
 ---
 title: "코딩"
-summary: "알고리즘과 웹 개발을 공부합니다."
+image_path: "/img/coding.jpg"
 ---
+
+알고리즘과 웹 개발을 공부합니다.

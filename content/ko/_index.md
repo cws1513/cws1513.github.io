@@ -81,37 +81,33 @@ sections:
   id: 취미
   content:
     title: '나의 취미 (Hobby)'
-    text: ''
-    count: 3  
+    count: 3
     filters:
       folders:
-        - hobby 
+        - hobby
   design:
     view: custom_view_a  
-
-- block: collection
-  id: 웹사이트
-  content:
-    title: '주요 웹사이트 (Websites)'
-    text: ''
-    count: 3  
-    filters:
-      folders:
-        - websites 
-  design:
-    view: custom_view_b 
+    columns: '3' 
 
 - block: collection
   id: 스터디
   content:
     title: '나의 스터디 (Study)'
-    text: ''
-    count: 3  
+    count: 3
     filters:
       folders:
-        - study  
+        - study
   design:
-    view: card  
-    columns: '3' 
+    view: custom_view_b 
 
---- 
+- block: collection
+  id: 웹사이트
+  content:
+    title: '주요 웹사이트 (Websites)'
+    count: 3
+    filters:
+      folders:
+        - websites
+  design:
+    view: custom_view_c  
+---

@@ -1,4 +1,6 @@
 ---
 title: "유튜브 시청"
-summary: "다양한 지식과 즐거움을 얻습니다."
+image_path: "/img/youtube.jpg" 
 ---
+
+다양한 지식과 즐거움을 얻습니다.

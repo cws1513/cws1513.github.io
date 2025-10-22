@@ -1,4 +1,6 @@
 ---
 title: "영어 회화"
-summary: "글로벌 커뮤니케이션을 준비합니다."
+image_path: "/img/english.jpg"
 ---
+
+글로벌 커뮤니케이션을 준비합니다.

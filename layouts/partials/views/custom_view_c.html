@@ -1,3 +1,5 @@
+<!-- ✅ custom_view_a loaded -->
+
 {{- $p := . -}}{{- if .page -}}{{- $p = .page -}}{{- end -}}
 {{- $link := $p.RelPermalink -}}{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
 {{- $img := "" -}}{{ with $p.Params.image_path }}{{ with resources.Get . }}{{ $img = (.Fill "64x64").RelPermalink }}{{ end }}{{ end }}

@@ -1,0 +1,15 @@
+{{- $view := or .Design.view "custom_view_a" -}}
+{{- $tpl  := printf "views/%s.html" $view -}}
+
+{{- $pages := slice -}}
+{{- with .Content.filters.folders -}}
+  {{- range . -}}
+    {{- $pages = $pages | append (where site.RegularPages "Section" .) -}}
+  {{- end -}}
+{{- else -}}
+  {{- $pages = site.RegularPages -}}
+{{- end -}}
+
+{{- range first (or .Content.count 9) $pages -}}
+  {{ partial $tpl (dict "page" .) }}
+{{- end -}}

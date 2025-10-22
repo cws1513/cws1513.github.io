@@ -1,10 +1,28 @@
-<!-- ✅ custom_view_a loaded -->
+{{- $p := . -}}
+{{- if .page -}}{{- $p = .page -}}{{- end -}}
+{{- if .Page -}}{{- $p = .Page -}}{{- end -}}
+{{- if .item -}}{{- $p = .item -}}{{- end -}}
+{{- if .Item -}}{{- $p = .Item -}}{{- end -}}
 
-{{- $p := . -}}{{- if .page -}}{{- $p = .page -}}{{- end -}}
-{{- $link := $p.RelPermalink -}}{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
-{{- $img := "" -}}{{ with $p.Params.image_path }}{{ with resources.Get . }}{{ $img = (.Fill "64x64").RelPermalink }}{{ end }}{{ end }}
+{{- $link := $p.RelPermalink -}}
+{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+
+{{- $img := "" -}}
+{{- with $p.Params.image_path -}}
+  {{- with resources.Get . -}}
+    {{- $img = (.Fill "64x64").RelPermalink -}}
+  {{- else -}}
+    {{- $img = (printf "/%s" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $title := or $p.Title $p.Params.title -}}
 
 <div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid #eee;">
-  {{ if $img }}<a href="{{ $link }}"><img src="{{ $img }}" alt="{{ $p.Title }}" style="width:48px; height:48px; object-fit:cover; border-radius:50%;"></a>{{ end }}
-  <h3 style="margin:0; font-size:1.05rem;"><a href="{{ $link }}">{{ $p.Title }}</a></h3>
+  {{- if $img -}}
+  <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>
+    <img src="{{ $img }}" alt="{{ $title }}" style="width:48px; height:48px; object-fit:cover; border-radius:50%;">
+  </a>
+  {{- end -}}
+  <h3 style="margin:0; font-size:1.05rem;"><a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $title }}</a></h3>
 </div>

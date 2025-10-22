@@ -1,10 +1,37 @@
 <!-- ✅ custom_view_a loaded -->
+{{- /* 컨텍스트 고정: 어떤 키로 넘어와도 $p로 통일 */ -}}
+{{- $p := . -}}
+{{- if .page -}}{{- $p = .page -}}{{- end -}}
+{{- if .Page -}}{{- $p = .Page -}}{{- end -}}
+{{- if .item -}}{{- $p = .item -}}{{- end -}}
+{{- if .Item -}}{{- $p = .Item -}}{{- end -}}
 
-{{- $p := . -}}{{- if .page -}}{{- $p = .page -}}{{- end -}}
-{{- $link := $p.RelPermalink -}}{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
-{{- $img := "" -}}{{ with $p.Params.image_path }}{{ with resources.Get . }}{{ $img = (.Fill "600x400").RelPermalink }}{{ end }}{{ end }}
+{{- /* 링크 */ -}}
+{{- $link := $p.RelPermalink -}}
+{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+
+{{- /* 이미지: assets 우선, 실패 시 static 폴백(/media/...) */ -}}
+{{- $img := "" -}}
+{{- with $p.Params.image_path -}}
+  {{- with resources.Get . -}}
+    {{- $img = (.Fill "600x400").RelPermalink -}}
+  {{- else -}}
+    {{- $img = (printf "/%s" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* 텍스트 폴백 */ -}}
+{{- $title := or $p.Title $p.Params.title -}}
+{{- $summary := or $p.Params.summary $p.Summary -}}
 
 <div class="card" style="border:1px solid #eee; border-radius:8px; overflow:hidden;">
-  {{ if $img }}<a href="{{ $link }}"><img src="{{ $img }}" alt="{{ $p.Title }}" style="width:100%; height:180px; object-fit:cover;"></a>{{ end }}
-  <div style="padding:12px;"><h4 style="margin:0;"><a href="{{ $link }}">{{ $p.Title }}</a></h4><p>{{ $p.Params.summary }}</p></div>
+  {{- if $img -}}
+  <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>
+    <img src="{{ $img }}" alt="{{ $title }}" style="width:100%; height:180px; object-fit:cover;">
+  </a>
+  {{- end -}}
+  <div style="padding:12px;">
+    <h4 style="margin:0 0 6px;"><a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $title }}</a></h4>
+    {{- if $summary -}}<p style="margin:0;">{{ $summary }}</p>{{- end -}}
+  </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Google"
-image_path: "/img/google.jpg"
+image_path: "media/google.jpg"
 external_link: "https://www.google.com"
 ---
 

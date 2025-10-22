@@ -1,6 +1,6 @@
 ---
 title: "Soccer"
-image_path: "/img/soccer.jpg"
+image_path: "media/soccer.jpg"
 ---
 
 It helps me with teamwork and health.

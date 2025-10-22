@@ -1,6 +1,6 @@
 ---
 title: "Naver"
-image_path: "/img/naver.png"
+image_path: "media/naver.png"
 external_link: "https://www.naver.com"
 ---
 

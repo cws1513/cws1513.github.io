@@ -1,6 +1,6 @@
 ---
 title: "Watching YouTube"
-image_path: "/img/youtube.jpg"
+image_path: "media/youtube.jpg"
 ---
 
 I gain diverse knowledge and entertainment.

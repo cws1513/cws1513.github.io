@@ -1,6 +1,6 @@
 ---
 title: "English Conversation"
-image_path: "/img/english.jpg"
+image_path: "mediaenglish.jpg"
 ---
 
 Preparing for global communication.

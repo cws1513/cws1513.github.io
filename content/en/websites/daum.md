@@ -1,6 +1,6 @@
 ---
 title: "Daum"
-image_path: "/img/daum.jpg"
+image_path: "media/daum.jpg"
 external_link: "https://www.daum.net"
 ---
 

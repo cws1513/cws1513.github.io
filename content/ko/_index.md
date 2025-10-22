@@ -86,7 +86,7 @@ sections:
       folders:
         - hobby
   design:
-    view: custom_view_a
+    views: custom_view_a
     columns: '3' 
 
 - block: collection
@@ -98,7 +98,7 @@ sections:
       folders:
         - study
   design:
-    view: custom_view_b
+    views: custom_view_b
 
 - block: collection
   id: 웹사이트
@@ -109,5 +109,5 @@ sections:
       folders:
         - websites
   design:
-    view: custom_view_c
+    views: custom_view_c
 ---

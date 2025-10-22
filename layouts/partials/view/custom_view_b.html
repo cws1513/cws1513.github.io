@@ -1,4 +1,6 @@
 {{- $p := . -}}
+{{- if .page -}}{{- $p = .page -}}{{- end -}}
+
 {{- $link := $p.RelPermalink -}}
 {{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
 

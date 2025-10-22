@@ -1,25 +1,8 @@
-{{- $p := . -}}
-{{- if .page -}}{{- $p = .page -}}{{- end -}}
-{{- $link := $p.RelPermalink -}}
-{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+{{- $p := . -}}{{- if .page -}}{{- $p = .page -}}{{- end -}}
+{{- $link := $p.RelPermalink -}}{{- if $p.Params.external_link -}}{{- $link = $p.Params.external_link -}}{{- end -}}
+{{- $img := "" -}}{{ with $p.Params.image_path }}{{ with resources.Get . }}{{ $img = (.Fill "64x64").RelPermalink }}{{ end }}{{ end }}
 
-<div class="stream-item" style="padding:0.75rem 1.25rem; border-bottom:1px solid #eee; display:flex; align-items:center;">
-  
-  {{- $imgURL := "" -}}
-  {{- with $p.Params.image_path -}}
-    {{- $res := resources.Get . -}}
-    {{- if $res -}}
-      {{- $img := $res.Fill "50x50" -}}
-      {{- $imgURL = $img.RelPermalink -}}
-    {{- end -}}
-  {{- end -}}
-  {{- if $imgURL -}}
-    <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }} class="mr-3">
-      <img src="{{ $imgURL }}" alt="{{ $p.Title }}" style="width:50px; height:50px; object-fit:cover; border-radius:50%;">
-    </a>
-  {{- end -}}
-
-  <h3 class="article-title mb-0 mt-0" style="font-size:1.1rem;">
-    <a href="{{ $link }}" {{ if $p.Params.external_link }}target="_blank" rel="noopener"{{ end }}>{{ $p.Title }}</a>
-  </h3>
-</div>  
+<div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid #eee;">
+  {{ if $img }}<a href="{{ $link }}"><img src="{{ $img }}" alt="{{ $p.Title }}" style="width:48px; height:48px; object-fit:cover; border-radius:50%;"></a>{{ end }}
+  <h3 style="margin:0; font-size:1.05rem;"><a href="{{ $link }}">{{ $p.Title }}</a></h3>
+</div>

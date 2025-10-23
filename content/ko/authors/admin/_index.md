@@ -1,31 +1,22 @@
 ---
-
 title: 최우성
-
-
 first_name: 우성
 last_name: 최
 
-
 superuser: true
 
-
 role: IT정보공학과 학부생
-
 
 organizations:
   - name: 전북대학교
     url: 'https://www.jbnu.ac.kr/'
 
-
 bio: 자바스크립트, 리액트 등 새로운 언어와 기술을 배우고 익히며 프론트엔드 개발 분야에 깊은 관심을 가지고 있습니다.
-
 
 interests:
   - 웹 개발 (Web Development)
   - 취미 (Hobby)
   - 알고리즘 (Algorithm)
-
 
 education:
   courses:
@@ -33,8 +24,8 @@ education:
       institution: 전북대학교
       year: 2021
 
-
-  social:
+# social 앞의 띄어쓰기를 완전히 제거했습니다.
+social:
   - icon: envelope
     icon_pack: fas
     link: '#contact'
@@ -52,8 +43,7 @@ education:
     link: uploads/resume.pdf
   - icon: blog
     icon_pack: fas
-    link: 'https://blog.naver.com/cws1513'  
-    
+    link: 'https://blog.naver.com/cws1513'
 
 email: ''
 

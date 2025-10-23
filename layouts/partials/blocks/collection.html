@@ -11,7 +11,6 @@
 {{- /* $pages 변수를 $all로 먼저 초기화 */ -}}
 {{- $pages := $all -}}
 
-{{- /* --- 수정된 부분 --- */ -}}
 {{- /* .content.filters.folders가 존재하는지 확인 (with 사용) */ -}}
 {{- with .content.filters.folders -}}
   {{- /* $folders 변수에 할당 (예: [hobby]) */ -}}
@@ -31,8 +30,6 @@
     {{- $pages = $filteredPages -}}
   {{- end -}}
 {{- end -}}
-{{- /* --- 수정 종료 --- */ -}}
-
 
 {{- /* kind 필터 (있는 경우) */ -}}
 {{- with .content.filters.kind -}}

@@ -4,19 +4,35 @@
 {{- $lang := site.Language.Lang -}}
 {{- with .Page }}{{- $lang = .Language.Lang -}}{{- end -}}
 
+{{- /* 모든 정규 페이지 가져오기 */ -}}
 {{- $all := where site.RegularPages "Lang" $lang -}}
 {{- $all = where $all "Draft" "!=" true -}}
 
+{{- /* 폴더 필터링 */ -}}
 {{- $folders := .content.filters.folders | default (slice) -}}
-{{- $pages := $all -}}
+{{- $pages := slice -}}
+
 {{- if gt (len $folders) 0 -}}
-  {{- $pages = where $all "Section" "in" $folders -}}
+  {{- /* 각 폴더에 대해 정확히 일치하는 페이지만 필터링 */ -}}
+  {{- range $folder := $folders -}}
+    {{- $folderPages := where $all "Section" $folder -}}
+    {{- $pages = $pages | append $folderPages -}}
+  {{- end -}}
+{{- else -}}
+  {{- $pages = $all -}}
 {{- end -}}
 
+{{- /* 날짜순 정렬 */ -}}
 {{- $pages = sort $pages "Date" "desc" -}}
+
+{{- /* 개수 제한 */ -}}
 {{- $n := or .content.count 9 -}}
 {{- $pages = first $n $pages -}}
 
+{{- /* 디버깅: 필터링된 페이지 확인 (개발 중에만 사용) */ -}}
+{{- /* {{ printf "<!-- Filtered %d pages from folders: %v -->" (len $pages) $folders | safeHTML }} */ -}}
+
+{{- /* 각 페이지를 해당 뷰 템플릿으로 렌더링 */ -}}
 {{- range $pages -}}
   {{ partial $tpl (dict "page" .) }}
 {{- end -}}

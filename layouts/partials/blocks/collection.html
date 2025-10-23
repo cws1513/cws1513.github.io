@@ -13,13 +13,31 @@
 {{- $pages := slice -}}
 
 {{- if gt (len $folders) 0 -}}
-  {{- /* 각 폴더에 대해 정확히 일치하는 페이지만 필터링 */ -}}
   {{- range $folder := $folders -}}
     {{- $folderPages := where $all "Section" $folder -}}
+    {{- /* Type 필터 추가 */ -}}
+    {{- $folderPages = where $folderPages "Type" $folder -}}
     {{- $pages = $pages | append $folderPages -}}
   {{- end -}}
 {{- else -}}
   {{- $pages = $all -}}
+{{- end -}}
+
+{{- /* kind 필터 (있는 경우) */ -}}
+{{- with .content.filters.kind -}}
+  {{- $pages = where $pages "Kind" . -}}
+{{- end -}}
+
+{{- /* exclude_featured 필터 (있는 경우) */ -}}
+{{- with .content.filters.exclude_featured -}}
+  {{- if eq . true -}}
+    {{- $pages = where $pages "Params.featured" "!=" true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* tag 필터 (있는 경우) */ -}}
+{{- with .content.filters.tag -}}
+  {{- $pages = where $pages "Params.tags" "intersect" (slice .) -}}
 {{- end -}}
 
 {{- /* 날짜순 정렬 */ -}}
@@ -28,9 +46,6 @@
 {{- /* 개수 제한 */ -}}
 {{- $n := or .content.count 9 -}}
 {{- $pages = first $n $pages -}}
-
-{{- /* 디버깅: 필터링된 페이지 확인 (개발 중에만 사용) */ -}}
-{{- /* {{ printf "<!-- Filtered %d pages from folders: %v -->" (len $pages) $folders | safeHTML }} */ -}}
 
 {{- /* 각 페이지를 해당 뷰 템플릿으로 렌더링 */ -}}
 {{- range $pages -}}

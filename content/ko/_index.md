@@ -73,16 +73,17 @@ sections:
       <div style="margin-top: 0.5rem; margin-bottom: 2rem;">
         <i class="fas fa-map-marker-alt pr-2" aria-hidden="true"></i> 전주시
       </div>
-      <iframe src="google.com/maps/embed?pb=!1m18!1m12!1m3!1d103332.9511085018!2d127.0549449439811!3d35.82422345638018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023435b32616b%3A0x1b4c02f47c21c78!2z7KCE656R67aB64-EIOyjvOyjvA!5e0!3m2!1sko!2skr!4v1729065000000!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103332.9511085018!2d127.0549449439811!3d35.82422345638018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357023435b32616b%3A0x1b4c02f47c21c78!2z7KCE656R67aB64-EIOyjvOyjvA!5e0!3m2!1sko!2skr!4v1729065000000!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
 
 - block: collection
   content:
     title: '나의 취미 (Hobby)'
     count: 3
     filters:
-      folders: [hobby]
+      folders: 
+        - hobby
+      kind: page
   design:
     view: custom_view_a
     columns: '3'
@@ -92,16 +93,22 @@ sections:
     title: '나의 스터디 (Study)'
     count: 3
     filters:
-      folders: [study]
+      folders: 
+        - study
+      kind: page
   design:
     view: custom_view_b
+    columns: '3'
 
 - block: collection
   content:
     title: '주요 웹사이트 (Websites)'
     count: 3
     filters:
-      folders: [websites]
+      folders: 
+        - websites
+      kind: page
   design:
     view: custom_view_c
+    columns: '3'
 ---

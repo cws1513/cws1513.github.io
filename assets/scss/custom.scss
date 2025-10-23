@@ -1,19 +1,18 @@
-
 .dark {
-
-  
   #contact {
-
-    h1, p, a {
-      color: var(--bs-link-color) !important; 
+    background-color: var(--hb-dark-bg) !important;
+    h1, p {
+      color: var(--hb-dark-text) !important;
+    }
+    a[href^="mailto:"], a[href^="tel:"] {
+      color: var(--bs-link-color) !important;
     }
   }
 
-  
   #resume-block {
-    
+    background-color: var(--hb-dark-bg) !important;
     h1, p {
-      color: var(--bs-link-color) !important;
+      color: var(--hb-dark-text) !important;
     }
   }
 }

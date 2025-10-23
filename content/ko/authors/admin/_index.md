@@ -34,7 +34,7 @@ education:
       year: 2021
 
 
-social:
+  social:
   - icon: envelope
     icon_pack: fas
     link: '#contact'
@@ -50,6 +50,10 @@ social:
   - icon: file-alt
     icon_pack: fas
     link: uploads/resume.pdf
+  - icon: blog           
+    icon_pack: fas      
+    link: 'https://blog.naver.com/cws1513'   
+    
 
 email: ''
 

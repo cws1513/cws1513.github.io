@@ -52,7 +52,7 @@ education:
     link: uploads/resume.pdf
   - icon: blog           
     icon_pack: fas      
-    link: 'https://blog.naver.com/cws1513'   
+    link: 'https://blog.naver.com/cws1513'  
     
 
 email: ''

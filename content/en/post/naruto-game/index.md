@@ -10,9 +10,9 @@ image:
   caption: 'Naruto Game Screenshot'
   focal_point: Smart
 ---
-
+<p style="text-align: justify;">
 For a personal project, I decided to create a 2D side-scrolling action game based on my favorite anime, 'Naruto,' using Java. I studied the basic structure by referencing an existing 2D game source code on GitHub, but I focused on implementing new features by adding my own ideas.
-
+</p>
 ## 🚀 Key Features
 
 -   **Multiple Playable Characters**: Freely switch between various characters like Naruto and Sasuke during gameplay.

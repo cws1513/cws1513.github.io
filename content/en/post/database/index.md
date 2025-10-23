@@ -10,9 +10,9 @@ image:
   caption: 'Project ER Diagram'
   focal_point: Smart
 ---
-
+<p style="text-align: justify;">
 As a team project for my database course, I designed and implemented a database for an efficient match-making and information management system for soccer and futsal enthusiasts. The goal was to solve the problems of the inefficient existing matching methods and maximize user convenience.
-
+</p>
 ### 1. Project Overview
 
 This project aims to build a database system that provides features such as personalized match recommendations, easy match applications and team formation, stadium information, and connections to expert lessons. The system is designed to resolve issues like difficulty in information retrieval, frequent match cancellations, and skill imbalances, thereby contributing to the vitalization of sports activities.

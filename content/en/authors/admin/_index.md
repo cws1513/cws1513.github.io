@@ -55,7 +55,10 @@ highlight_name: true
 user_groups:
   - Students
 ---
-
+<p style="text-align: justify;">
 Hello, I am Wooseong Choi, an undergraduate student in the Department of IT Information Engineering at Jeonbuk National University. I find great joy in the process of learning and mastering new languages and technologies like JavaScript and React, and through this, I have a deep interest in the field of front-end development, which focuses on providing better user experiences.
+</p>
 
+<p style="text-align: justify;">
 I cultivate logical thinking by solving algorithmic problems and gain creative inspiration from various hobbies. This website is a space to record my technical growth and projects. I always welcome opportunities to learn and grow together.
+</p>

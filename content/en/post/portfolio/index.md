@@ -11,9 +11,9 @@ image:
   caption: 'Portfolio Site Main Screen'
   focal_point: Smart
 ---
-
+<p style="text-align: justify;">
 The website you are currently viewing is my third project. Using the static site generator (SSG) **Hugo** and the **Blox** framework, I experienced the entire process of building and deploying my own online portfolio from scratch.
-
+</p>
 ## 🚀 Key Technologies Used
 
 -   **Hugo & Blox Framework**: Used for fast and flexible static site generation. I learned how web pages are automatically created from content written in Markdown.

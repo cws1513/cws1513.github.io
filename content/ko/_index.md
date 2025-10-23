@@ -83,7 +83,6 @@ sections:
     filters:
       folders: 
         - hobby
-      kind: page
   design:
     view: custom_view_a
     columns: '3'
@@ -95,7 +94,6 @@ sections:
     filters:
       folders: 
         - study
-      kind: page
   design:
     view: custom_view_b
     columns: '3'
@@ -107,7 +105,6 @@ sections:
     filters:
       folders: 
         - websites
-      kind: page
   design:
     view: custom_view_c
     columns: '3'

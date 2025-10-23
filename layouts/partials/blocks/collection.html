@@ -4,48 +4,45 @@
 {{- $lang := site.Language.Lang -}}
 {{- with .Page }}{{- $lang = .Language.Lang -}}{{- end -}}
 
-{{- /* 모든 정규 페이지 가져오기 */ -}}
+{{- /* 1. 모든 정규 페이지 가져오기 */ -}}
 {{- $all := where site.RegularPages "Lang" $lang -}}
 {{- $all = where $all "Draft" "!=" true -}}
 
-{{- /* $pages 변수를 $all로 먼저 초기화 */ -}}
-{{- $pages := $all -}}
+{{- /* 2. .content.filters.folders 값을 가져옴 (없으면 빈 슬라이스) */ -}}
+{{- $folders := .content.filters.folders | default (slice) -}}
 
-{{- /* .content.filters.folders가 존재하는지 확인 (with 사용) */ -}}
-{{- with .content.filters.folders -}}
-  {{- /* $folders 변수에 할당 (예: [hobby]) */ -}}
-  {{- $folders := . -}}
-  {{- /* $folders가 비어있지 않은 경우에만 필터링 실행 */ -}}
-  {{- if gt (len $folders) 0 -}}
-    {{- /* 필터링된 페이지를 담을 빈 슬라이스 생성 */ -}}
-    {{- $filteredPages := slice -}}
-    {{- /* $folders 배열을 순회 (예: "hobby") */ -}}
-    {{- range $folder := $folders -}}
-      {{- /* $all 페이지 중 Section이 $folder와 일치하는 페이지만 찾음 */ -}}
-      {{- $folderPages := where $all "Section" $folder -}}
-      {{- /* 찾은 페이지들을 $filteredPages에 추가 */ -}}
-      {{- $filteredPages = $filteredPages | append $folderPages -}}
-    {{- end -}}
-    {{- /* $pages 변수를 최종 필터링된 페이지로 교체 */ -}}
-    {{- $pages = $filteredPages -}}
-  {{- end -}}
+{{- /* 3. $pages 변수를 선언 */ -}}
+{{- $pages := slice -}}
+
+{{- /* 4. $folders 목록의 길이가 0보다 큰지 (필터가 설정되었는지) 확인 */ -}}
+{{- if gt (len $folders) 0 -}}
+  {{- /* 4a. 필터가 있으면: $all(모든 페이지)에서 Section이 일치하는 페이지만 $pages에 추가 */ -}}
+  {{- range $folder := $folders -}}
+    {{- $folderPages := where $all "Section" $folder -}}
+    {{- $pages = $pages | append $folderPages -}}
+  {{- end -}}
+{{- else -}}
+  {{- /* 4b. 필터가 없으면: $pages는 $all (모든 페이지)가 됨 */ -}}
+  {{- $pages = $all -}}
 {{- end -}}
+
+{{- /* --- 나머지 필터들은 위에서 정제된 $pages를 기준으로 적용 --- */ -}}
 
 {{- /* kind 필터 (있는 경우) */ -}}
 {{- with .content.filters.kind -}}
-  {{- $pages = where $pages "Kind" . -}}
+  {{- $pages = where $pages "Kind" . -}}
 {{- end -}}
 
 {{- /* exclude_featured 필터 (있는 경우) */ -}}
 {{- with .content.filters.exclude_featured -}}
-  {{- if eq . true -}}
-    {{- $pages = where $pages "Params.featured" "!=" true -}}
-  {{- end -}}
+  {{- if eq . true -}}
+    {{- $pages = where $pages "Params.featured" "!=" true -}}
+  {{- end -}}
 {{- end -}}
 
 {{- /* tag 필터 (있는 경우) */ -}}
 {{- with .content.filters.tag -}}
-  {{- $pages = where $pages "Params.tags" "intersect" (slice .) -}}
+  {{- $pages = where $pages "Params.tags" "intersect" (slice .) -}}
 {{- end -}}
 
 {{- /* 날짜순 정렬 */ -}}
@@ -57,5 +54,5 @@
 
 {{- /* 각 페이지를 해당 뷰 템플릿으로 렌더링 */ -}}
 {{- range $pages -}}
-  {{ partial $tpl (dict "page" .) }}
+  {{ partial $tpl (dict "page" .) }}
 {{- end -}}

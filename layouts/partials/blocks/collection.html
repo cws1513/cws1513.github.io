@@ -4,50 +4,46 @@
 {{- $lang := site.Language.Lang -}}
 {{- with .Page }}{{- $lang = .Language.Lang -}}{{- end -}}
 
-{{- /* 모든 정규 페이지 가져오기 */ -}}
-{{- $all := where site.RegularPages "Lang" $lang -}}
-{{- $all = where $all "Draft" "!=" true -}}
-
-{{- /* 폴더 필터링 */ -}}
+{{- /* 폴더 필터 가져오기 */ -}}
 {{- $folders := .content.filters.folders | default (slice) -}}
 {{- $pages := slice -}}
 
 {{- if gt (len $folders) 0 -}}
+  {{- /* 각 폴더별로 정확히 매칭되는 페이지만 가져오기 */ -}}
   {{- range $folder := $folders -}}
-    {{- $folderPages := where $all "Section" $folder -}}
-    {{- /* Type 필터 추가 */ -}}
-    {{- $folderPages = where $folderPages "Type" $folder -}}
-    {{- $pages = $pages | append $folderPages -}}
-  {{- end -}}
-{{- else -}}
-  {{- $pages = $all -}}
-{{- end -}}
-
-{{- /* kind 필터 (있는 경우) */ -}}
-{{- with .content.filters.kind -}}
-  {{- $pages = where $pages "Kind" . -}}
-{{- end -}}
-
-{{- /* exclude_featured 필터 (있는 경우) */ -}}
-{{- with .content.filters.exclude_featured -}}
-  {{- if eq . true -}}
-    {{- $pages = where $pages "Params.featured" "!=" true -}}
+    {{- range site.RegularPages -}}
+      {{- /* 언어, 섹션, Draft 상태 확인 */ -}}
+      {{- if and (eq .Lang $lang) (eq .Section $folder) (not .Draft) -}}
+        {{- /* _index.md는 제외 */ -}}
+        {{- if ne .File.LogicalName "_index.md" -}}
+          {{- $pages = $pages | append . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- /* tag 필터 (있는 경우) */ -}}
-{{- with .content.filters.tag -}}
-  {{- $pages = where $pages "Params.tags" "intersect" (slice .) -}}
+{{- /* 중복 제거 (혹시 모를 경우 대비) */ -}}
+{{- $uniquePages := slice -}}
+{{- $seen := dict -}}
+{{- range $pages -}}
+  {{- $key := .File.Path -}}
+  {{- if not (isset $seen $key) -}}
+    {{- $uniquePages = $uniquePages | append . -}}
+    {{- $seen = merge $seen (dict $key true) -}}
+  {{- end -}}
 {{- end -}}
+{{- $pages = $uniquePages -}}
 
 {{- /* 날짜순 정렬 */ -}}
 {{- $pages = sort $pages "Date" "desc" -}}
 
 {{- /* 개수 제한 */ -}}
-{{- $n := or .content.count 9 -}}
+{{- $n := or .content.count 3 -}}
 {{- $pages = first $n $pages -}}
 
-{{- /* 각 페이지를 해당 뷰 템플릿으로 렌더링 */ -}}
-{{- range $pages -}}
-  {{ partial $tpl (dict "page" .) }}
-{{- end -}}
+{{- /* 디버깅 (필요시 주석 해제) */ -}}
+<!-- Folder: {{ delimit $folders ", " }} | Found: {{ len $pages }} pages -->
+
+{{- /* 뷰 템플릿에 페이지 컬렉션 전달 */ -}}
+{{ partial $tpl (dict "Pages" $pages "Block" .) }}

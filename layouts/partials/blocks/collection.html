@@ -1,58 +1,42 @@
+{{- /* 1. 뷰(a,b,c) 설정을 가져옵니다. (기본값: custom_view_a) */ -}}
 {{- $view := or .design.view "custom_view_a" -}}
 {{- $tpl  := printf "views/%s.html" $view -}}
 
+{{- /* 2. 언어 설정을 가져옵니다. */ -}}
 {{- $lang := site.Language.Lang -}}
 {{- with .Page }}{{- $lang = .Language.Lang -}}{{- end -}}
 
-{{- /* 1. 모든 정규 페이지 가져오기 */ -}}
+{{- /* 3. 사이트의 모든 일반 페이지(draft가 아닌)를 가져옵니다. */ -}}
 {{- $all := where site.RegularPages "Lang" $lang -}}
 {{- $all = where $all "Draft" "!=" true -}}
 
-{{- /* 2. .content.filters.folders 값을 가져옴 (없으면 빈 슬라이스) */ -}}
+{{- /* 4. (핵심 수정) _index.md에서 지정한 'folders'로 필터링합니다. */ -}}
 {{- $folders := .content.filters.folders | default (slice) -}}
-
-{{- /* 3. $pages 변수를 선언 */ -}}
 {{- $pages := slice -}}
 
-{{- /* 4. $folders 목록의 길이가 0보다 큰지 (필터가 설정되었는지) 확인 */ -}}
 {{- if gt (len $folders) 0 -}}
-  {{- /* 4a. 필터가 있으면: $all(모든 페이지)에서 Section이 일치하는 페이지만 $pages에 추가 */ -}}
-  {{- range $folder := $folders -}}
-    {{- $folderPages := where $all "Section" $folder -}}
-    {{- $pages = $pages | append $folderPages -}}
-  {{- end -}}
+  {{- /* 'folders' (hobby, study 등)가 지정된 경우 */ -}}
+  {{- range $folder := $folders -}}
+    {{- /* $all(전체) 페이지에서 'Section'(폴더명)이 일치하는 것만 찾습니다. */ -}}
+    {{- $folderPages := where $all "Section" $folder -}}
+
+    {{- /* 🚨 문제의 'Type' 필터를 여기서 제거했습니다. 🚨 */ -}}
+
+    {{- $pages = $pages | append $folderPages -}}
+  {{- end -}}
 {{- else -}}
-  {{- /* 4b. 필터가 없으면: $pages는 $all (모든 페이지)가 됨 */ -}}
-  {{- $pages = $all -}}
+  {{- /* 'folders'가 없으면, 모든 페이지를 대상으로 합니다. */ -}}
+  {{- $pages = $all -}}
 {{- end -}}
 
-{{- /* --- 나머지 필터들은 위에서 정제된 $pages를 기준으로 적용 --- */ -}}
-
-{{- /* kind 필터 (있는 경우) */ -}}
-{{- with .content.filters.kind -}}
-  {{- $pages = where $pages "Kind" . -}}
-{{- end -}}
-
-{{- /* exclude_featured 필터 (있는 경우) */ -}}
-{{- with .content.filters.exclude_featured -}}
-  {{- if eq . true -}}
-    {{- $pages = where $pages "Params.featured" "!=" true -}}
-  {{- end -}}
-{{- end -}}
-
-{{- /* tag 필터 (있는 경우) */ -}}
-{{- with .content.filters.tag -}}
-  {{- $pages = where $pages "Params.tags" "intersect" (slice .) -}}
-{{- end -}}
-
-{{- /* 날짜순 정렬 */ -}}
+{{- /* 5. 날짜순으로 정렬합니다. */ -}}
 {{- $pages = sort $pages "Date" "desc" -}}
 
-{{- /* 개수 제한 */ -}}
+{{- /* 6. _index.md에서 지정한 'count' (3개)만큼 잘라냅니다. */ -}}
 {{- $n := or .content.count 9 -}}
 {{- $pages = first $n $pages -}}
 
-{{- /* 각 페이지를 해당 뷰 템플릿으로 렌더링 */ -}}
+{{- /* 7. 필터링된 페이지만큼 반복하여, 지정된 뷰(a,b,c)로 렌더링합니다. */ -}}
 {{- range $pages -}}
-  {{ partial $tpl (dict "page" .) }}
+  {{ partial $tpl (dict "page" .) }}
 {{- end -}}

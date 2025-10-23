@@ -1,12 +1,12 @@
 
 ko:
   languageCode: ko-KR
-  title: 전북대 최우성 포트폴리오
+  title: 최우성의 포트폴리오
   contentDir: content/ko
   weight: 1
 
 en:
   languageCode: en-US
-  title: Jeonbuk National University's Choi Woo-sung portfolio
+  title:  Woo-sung's portfolio
   contentDir: content/en
   weight: 2

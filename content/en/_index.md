@@ -51,9 +51,6 @@ sections:
   id: contact
   content:
     title: 📍 Location & Contact
-  design:
-    background:
-      color: "#f9f9f9"
   body: |-
     <div class="container-fluid section-heading-wrapper text-center">
       <h1 class="section-heading">Contact</h1>

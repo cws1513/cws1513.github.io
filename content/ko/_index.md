@@ -51,9 +51,6 @@ sections:
   id: contact
   content:
     title: 📍 위치 및 연락처
-  design:
-    background:
-      color: "#f9f9f9"
   body: |-
     <div class="container-fluid section-heading-wrapper text-center">
       <h1 class="section-heading">연락처</h1>

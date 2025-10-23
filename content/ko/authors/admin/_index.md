@@ -40,18 +40,18 @@ education:
     link: '#contact'
   - icon: instagram
     icon_pack: fab
-    link: 'https://instagram.com/choiwoosseong' 
+    link: 'https://instagram.com/choiwoosseong'
   - icon: github
     icon_pack: fab
-    link: https://github.com/cws1513 
+    link: https://github.com/cws1513
   - icon: youtube
     icon_pack: fab
     link: 'https://www.youtube.com/@Allright24_'
   - icon: file-alt
     icon_pack: fas
     link: uploads/resume.pdf
-  - icon: blog           
-    icon_pack: fas      
+  - icon: blog
+    icon_pack: fas
     link: 'https://blog.naver.com/cws1513'  
     
 

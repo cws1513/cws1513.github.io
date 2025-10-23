@@ -1,48 +1,36 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
+# 최우성 개인 포트폴리오 (cws1513.github.io)
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+안녕하세요, 전북대학교 IT정보공학과 최우성입니다.
+이 저장소는 제 개인 포트폴리오 웹사이트의 소스 코드를 관리하는 곳입니다.
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+이 프로젝트는 초급프로젝트 수업 과제의 일환으로 제작되었습니다. Hugo(Hugoblox 템플릿)를 사용하여 HTML/CSS/JS의 직접적인 코딩 없이, 정적 사이트 생성기(SSG)의 강력한 기능(콘텐츠 관리, 자동 빌드, 배포)을 학습하는 것을 목표로 했습니다.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+---
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+## 💻 라이브 사이트
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+배포된 웹사이트는 아래 주소에서 누구나 확인할 수 있습니다.
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
+**[https://cws1513.github.io/](https://cws1513.github.io/)**
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+---
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## ✨ 주요 특징 및 사용 기술
 
-## We ask you, humbly, to support this open source movement
+이 웹사이트는 과제 요구사항을 만족시키기 위해 다음과 같은 기술과 기능을 구현했습니다.
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+* **Site Generator:** **Hugo** (Hugoblox 템플릿 기반)
+* **Deployment:** **GitHub Pages**
+* **CI/CD:** **GitHub Actions**를 통한 `main` 브랜치 `push` 시 자동 빌드 및 배포
+* **Content:** 마크다운(`.md`) 파일을 통한 콘텐츠 관리
+* **Features:**
+    * **다국어 지원** (한국어 `ko` / 영어 `en`)
+    * 자기소개, 프로젝트, 취미, 스터디 등 **9개 이상의 카드 뷰**
+    * `custom_view_a/b/c` 등 **3가지 이상의 커스텀 뷰(HTML)** 적용
+    * 슬라이더, 지도, 소셜 아이콘, PDF 다운로드 등 다양한 위젯 활용
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+---
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+## 🔧 Credits (원본 템플릿)
 
-## Demo credits
-
-Please replace the demo images with your own.
-
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+이 웹사이트는 [Hugoblox](https://hugoblox.com/) (구 Wowchemy)에서 제공하는 템플릿을 기반으로 제작되었습니다.

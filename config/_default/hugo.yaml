@@ -14,3 +14,4 @@ security:
       - ^HUGO_
       - ^CI$
       - WC_POST_CSS
+      - Sitemap
